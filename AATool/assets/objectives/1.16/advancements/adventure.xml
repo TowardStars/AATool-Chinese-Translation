@@ -1,108 +1,111 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <group name="Adventure">
-    <advancement id="minecraft:adventure/root"                  name="Adventure"                icon="adventure"/>
-    <advancement id="minecraft:adventure/kill_a_mob"            name="Monster Hunter"           short_name="Hunter"/>
-    <advancement id="minecraft:adventure/ol_betsy"              name="Ol' Betsy"/>
-    <advancement id="minecraft:adventure/whos_the_pillager_now" name="Who's the Pillager Now?"  short_name="The Pillager" half="false"/>
+    <advancement id="minecraft:adventure/root"                  name="冒险"                icon="adventure"/>
+    <advancement id="minecraft:adventure/kill_a_mob"            name="怪物猎人"           short_name="怪物猎人"/>
+    <advancement id="minecraft:adventure/ol_betsy"              name="扣下悬刀"/>
+    <advancement id="minecraft:adventure/whos_the_pillager_now" name="现在谁才
+是掠夺者？"  short_name="谁掠夺者？" half="false"/>
 
-    <advancement id="minecraft:adventure/sleep_in_bed"          name="Sweet Dreams"             short_name="Dreams"/>
-    <advancement id="minecraft:adventure/trade"                 name="What a Deal!" short_name="What a Deal"/>
-    <advancement id="minecraft:adventure/two_birds_one_arrow"   name="Two Birds, One Arrow"     short_name="Two Birds" type="challenge" half="false"/>
-    <advancement id="minecraft:adventure/arbalistic"            name="Arbalistic"               type="challenge" half="false"/>
+    <advancement id="minecraft:adventure/sleep_in_bed"          name="甜蜜的梦"             short_name="甜蜜的梦"/>
+    <advancement id="minecraft:adventure/trade"                 name="成交！" short_name="成交！"/>
+    <advancement id="minecraft:adventure/two_birds_one_arrow"   name="一箭双雕"     short_name="一箭双雕" type="challenge" half="false"/>
+    <advancement id="minecraft:adventure/arbalistic"            name="劲弩手"               type="challenge" half="false"/>
 
-    <advancement id="minecraft:adventure/honey_block_slide"     name="Sticky Situation"         short_name="Sticky" half="false"/>
-    <advancement id="minecraft:adventure/bullseye"              name="Bullseye"                 type="challenge"/>
-    <advancement id="minecraft:adventure/shoot_arrow"           name="Take Aim"/>
-    <advancement id="minecraft:adventure/sniper_duel"           name="Sniper Duel"              type="challenge"/>
+    <advancement id="minecraft:adventure/honey_block_slide"     name="胶着状态"         short_name="胶着状态" half="false"/>
+    <advancement id="minecraft:adventure/bullseye"              name="正中靶心"                 type="challenge"/>
+    <advancement id="minecraft:adventure/shoot_arrow"           name="瞄准目标"/>
+    <advancement id="minecraft:adventure/sniper_duel"           name="狙击手
+的对决"              type="challenge"/>
 
-    <advancement id="minecraft:adventure/voluntary_exile"       name="Voluntary Exile"          short_name="Exile" icon="pillager_banner" half="false"/>
-    <advancement id="minecraft:adventure/hero_of_the_village"   name="Hero of the Village"      short_name="Hero" icon="pillager_banner" type="challenge" half="false"/>
-    <advancement id="minecraft:adventure/throw_trident"         name="A Throwaway Joke"         short_name="ATJ" half="false"/>
-    <advancement id="minecraft:adventure/very_very_frightening" name="Very Very Frightening"    short_name="VVF" half="false"/>
+    <advancement id="minecraft:adventure/voluntary_exile"       name="自我放逐"          short_name="自我放逐" icon="pillager_banner" half="false"/>
+    <advancement id="minecraft:adventure/hero_of_the_village"   name="村庄英雄"      short_name="村庄英雄" icon="pillager_banner" type="challenge" half="false"/>
+    <advancement id="minecraft:adventure/throw_trident"         name="抖包袱"         short_name="抖包袱" half="false"/>
+    <advancement id="minecraft:adventure/very_very_frightening" name="魔女审判"    short_name="魔女审判" half="false"/>
 
-    <advancement id="minecraft:adventure/summon_iron_golem"     name="Hired Help"               type="goal" half="false"/>
-    <advancement id="minecraft:adventure/totem_of_undying"      name="Postmortal"               type="goal" half="false"/>
-    <advancement id="minecraft:adventure/adventuring_time"      name="Adventuring Time" short_name="Adventuring" type="challenge" half="false">
-        <criteria goal="Biomes Visited">
-            <criterion id="minecraft:plains"/>
-            <criterion id="minecraft:forest"/>
-            <criterion id="minecraft:wooded_hills"              short_name="Wooded Hills"/>
-            <criterion id="minecraft:birch_forest"/>
-            <criterion id="minecraft:birch_forest_hills"        name="Birch Hills"/>
-            <criterion id="minecraft:dark_forest"/>
-            <criterion id="minecraft:swamp"/>
-            <criterion id="minecraft:taiga"/>
-            <criterion id="minecraft:taiga_hills"/>
-            <criterion id="minecraft:giant_tree_taiga"          name="Mega Taiga"/>
-            <criterion id="minecraft:giant_tree_taiga_hills"    name="Mega Taiga Hill" short_name="Mega Taiga H"/>
-            <criterion id="minecraft:snowy_taiga"               name="Snowy Taiga"       short_name="Snow Taiga"/>
-            <criterion id="minecraft:snowy_taiga_hills"         name="Snowy Taiga Hill"  short_name="Snow Taiga H"/>
-            <criterion id="minecraft:snowy_tundra"              name="Snowy Tundra"      short_name="Snow Tundra"/>
-            <criterion id="minecraft:snowy_mountains"           name="Snowy Mountain"    short_name="Snow Mtn"/>
-            <criterion id="minecraft:snowy_beach"               name="Snowy Beach"       short_name="Snow Beach"/>
-            <criterion id="minecraft:frozen_river"                                      short_name="F River"/>
-            <criterion id="minecraft:river"/>
-            <criterion id="minecraft:desert"/>
-            <criterion id="minecraft:desert_hills"/>
-            <criterion id="minecraft:savanna"/>
-            <criterion id="minecraft:savanna_plateau"           name="Savanna Plat"/>
-            <criterion id="minecraft:jungle"/>
-            <criterion id="minecraft:jungle_edge"/>
-            <criterion id="minecraft:jungle_hills"/>
-            <criterion id="minecraft:bamboo_jungle"             short_name="Bamboo"/>
-            <criterion id="minecraft:bamboo_jungle_hills"       name="Bamboo Hills"/>
-            <criterion id="minecraft:stone_shore"               short_name="Stn Shore"/>
-            <criterion id="minecraft:mountains"/>
-            <criterion id="minecraft:wooded_mountains"          name="Wooded Mtn"/>
-            <criterion id="minecraft:badlands"/>
-            <criterion id="minecraft:badlands_plateau"          name="Badlands Plateau"    short_name="Bad Plat"/>
-            <criterion id="minecraft:wooded_badlands_plateau"   name="Wooded Plateau" short_name="Wood Plat"/>
-            <criterion id="minecraft:mushroom_fields"           short_name="Mushroom"/>
-            <criterion id="minecraft:mushroom_field_shore"      name="Mushroom Shore"       short_name="MushShore"/>
-            <criterion id="minecraft:beach"/>
-            <criterion id="minecraft:warm_ocean"                                        short_name="Warm"/>
-            <criterion id="minecraft:lukewarm_ocean"                                    short_name="Lukewarm"/>
-            <criterion id="minecraft:deep_lukewarm_ocean"       name="Deep Lukewarm"    short_name="Deep LW"/>
-            <criterion id="minecraft:cold_ocean"                                        short_name="Cold"/>
-            <criterion id="minecraft:deep_cold_ocean"                                   short_name="Deep C"/>
-            <criterion id="minecraft:deep_frozen_ocean"         name="Deep Frozen"      short_name="DF"/>
+    <advancement id="minecraft:adventure/summon_iron_golem"     name="招募援兵"               type="goal" half="false"/>
+    <advancement id="minecraft:adventure/totem_of_undying"      name="超越生死"               type="goal" half="false"/>
+    <advancement id="minecraft:adventure/adventuring_time"      name="探索的时光" short_name="探索时光" type="challenge" half="false">
+        <criteria goal="访问的群系">
+            <criterion id="minecraft:plains"  name="平原"/>
+            <criterion id="minecraft:forest"  name="森林"/>
+            <criterion id="minecraft:wooded_hills"     name="繁茂的丘陵"         short_name="Wooded Hills"/>
+            <criterion id="minecraft:birch_forest"  name="桦木森林"/>
+            <criterion id="minecraft:birch_forest_hills"        name="桦木森林丘陵"/>
+            <criterion id="minecraft:dark_forest" name="黑森林"/>
+            <criterion id="minecraft:swamp" name="沼泽"/>
+            <criterion id="minecraft:taiga"                     name="针叶林"/>
+            <criterion id="minecraft:taiga_hills"               name="针叶林丘陵"/>
+            <criterion id="minecraft:giant_tree_taiga"          name="巨型针叶林"/>
+            <criterion id="minecraft:giant_tree_taiga_hills"    name="巨型针叶林丘陵" short_name="Mega Taiga H"/>
+            <criterion id="minecraft:snowy_taiga"               name="积雪针叶林"       short_name="Snow Taiga"/>
+            <criterion id="minecraft:snowy_taiga_hills"         name="积雪针叶林丘陵"  short_name="Snow Taiga H"/>
+            <criterion id="minecraft:snowy_tundra"              name="雪原"      short_name="Snow Tundra"/>
+            <criterion id="minecraft:snowy_mountains"           name="雪山"    short_name="Snow Mtn"/>
+            <criterion id="minecraft:snowy_beach"               name="积雪沙滩"       short_name="Snow Beach"/>
+            <criterion id="minecraft:frozen_river"              name="冻河"                       short_name="F River"/>
+            <criterion id="minecraft:river"                     name="河流"/>
+            <criterion id="minecraft:desert"                    name="沙漠"/>
+            <criterion id="minecraft:desert_hills"              name="沙漠丘陵"/>
+            <criterion id="minecraft:savanna"                 name="热带草原"/>
+            <criterion id="minecraft:savanna_plateau"           name="热带高原"/>
+            <criterion id="minecraft:jungle"                 name="丛林"/>
+            <criterion id="minecraft:jungle_edge"                 name="稀疏丛林"/>
+            <criterion id="minecraft:jungle_hills"                 name="丛林丘陵"/>
+            <criterion id="minecraft:bamboo_jungle"                      name="竹林"        short_name="Bamboo"/>
+            <criterion id="minecraft:bamboo_jungle_hills"       name="竹林丘陵"/>
+            <criterion id="minecraft:stone_shore"                       name="石岸"         short_name="Stn Shore"/>
+            <criterion id="minecraft:mountains"                 name="山地"/>
+            <criterion id="minecraft:wooded_mountains"          name="繁茂的山地"/>
+            <criterion id="minecraft:badlands"                 name="恶地"/>
+            <criterion id="minecraft:badlands_plateau"          name="恶地高原"    short_name="Bad Plat"/>
+            <criterion id="minecraft:wooded_badlands_plateau"   name="繁茂的恶地高原" short_name="Wood Plat"/>
+            <criterion id="minecraft:mushroom_fields"                     name="蘑菇岛"       short_name="Mushroom"/>
+            <criterion id="minecraft:mushroom_field_shore"      name="蘑菇岛岸"       short_name="MushShore"/>
+            <criterion id="minecraft:beach"                 name="沙滩"/>
+            <criterion id="minecraft:warm_ocean"                                name="暖水海洋"                         short_name="Warm"/>
+            <criterion id="minecraft:lukewarm_ocean"                            name="温水海洋"                         short_name="Lukewarm"/>
+            <criterion id="minecraft:deep_lukewarm_ocean"       name="温水深海"    short_name="Deep LW"/>
+            <criterion id="minecraft:cold_ocean"                                 name="冷水海洋"                        short_name="Cold"/>
+            <criterion id="minecraft:deep_cold_ocean"                               name="冷水深海"                     short_name="Deep C"/>
+            <criterion id="minecraft:deep_frozen_ocean"         name="冰冻深海"      short_name="DF"/>
         </criteria>
     </advancement>
-    <advancement id="minecraft:adventure/kill_all_mobs" name="Monsters Hunted" short_name="Monsters" type="challenge" half="false">
-        <criteria goal="Monsters Killed">
-            <criterion id="minecraft:creeper"/>
-            <criterion id="minecraft:zombie"/>
-            <criterion id="minecraft:skeleton"/>
-            <criterion id="minecraft:husk"/>
-            <criterion id="minecraft:drowned"/>
-            <criterion id="minecraft:stray"/>
-            <criterion id="minecraft:spider"/>
-            <criterion id="minecraft:cave_spider"/>
-            <criterion id="minecraft:enderman"/>
-            <criterion id="minecraft:slime"/>
-            <criterion id="minecraft:magma_cube"/>
-            <criterion id="minecraft:ghast"/>
-            <criterion id="minecraft:blaze"/>
-            <criterion id="minecraft:wither_skeleton" name="Wither Skeleton" short_name="W Skeleton"/>
-            <criterion id="minecraft:piglin"/>
-            <criterion id="minecraft:zombified_piglin" name="Zombie Piglin"/>
-            <criterion id="minecraft:hoglin"/>
-            <criterion id="minecraft:zoglin"/>
-            <criterion id="minecraft:silverfish"/>
-            <criterion id="minecraft:ender_dragon"/>
-            <criterion id="minecraft:endermite"/>
-            <criterion id="minecraft:shulker"/>
-            <criterion id="minecraft:wither"/>
-            <criterion id="minecraft:phantom"/>
-            <criterion id="minecraft:guardian"/>
-            <criterion id="minecraft:elder_guardian"/>
-            <criterion id="minecraft:zombie_villager" short_name="Zillager"/>
-            <criterion id="minecraft:witch"/>
-            <criterion id="minecraft:pillager"/>
-            <criterion id="minecraft:vindicator"/>
-            <criterion id="minecraft:evoker"/>
-            <criterion id="minecraft:vex"/>
-            <criterion id="minecraft:ravager"/>
+    <advancement id="minecraft:adventure/kill_all_mobs" name="资深怪
+物猎人" short_name="Monsters" type="challenge" half="false">
+        <criteria goal="杀掉的怪物">
+            <criterion id="minecraft:creeper"         name="苦力怕"/>
+            <criterion id="minecraft:zombie"         name="僵尸"/>
+            <criterion id="minecraft:skeleton"         name="骷髅"/>
+            <criterion id="minecraft:husk"         name="尸壳"/>
+            <criterion id="minecraft:drowned"         name="溺尸"/>
+            <criterion id="minecraft:stray"         name="流浪者"/>
+            <criterion id="minecraft:spider"         name="蜘蛛"/>
+            <criterion id="minecraft:cave_spider"         name="洞穴蜘蛛"/>
+            <criterion id="minecraft:enderman"         name="末影人"/>
+            <criterion id="minecraft:slime"         name="史莱姆"/>
+            <criterion id="minecraft:magma_cube"         name="岩浆怪"/>
+            <criterion id="minecraft:ghast"         name="恶魂"/>
+            <criterion id="minecraft:blaze"         name="烈焰人"/>
+            <criterion id="minecraft:wither_skeleton" name="凋零骷髅" short_name="W Skeleton"/>
+            <criterion id="minecraft:piglin"         name="猪灵"/>
+            <criterion id="minecraft:zombified_piglin" name="僵尸猪灵"/>
+            <criterion id="minecraft:hoglin"         name="疣猪兽"/>
+            <criterion id="minecraft:zoglin"         name="僵尸疣猪兽"/>
+            <criterion id="minecraft:silverfish"         name="蠹虫"/>
+            <criterion id="minecraft:ender_dragon"         name="末影龙"/>
+            <criterion id="minecraft:endermite"         name="末影螨"/>
+            <criterion id="minecraft:shulker"         name="潜影贝"/>
+            <criterion id="minecraft:wither"         name="凋零"/>
+            <criterion id="minecraft:phantom"         name="幻翼"/>
+            <criterion id="minecraft:guardian"         name="守卫者"/>
+            <criterion id="minecraft:elder_guardian"         name="远古守卫者"/>
+            <criterion id="minecraft:zombie_villager"           name="僵尸村民"    short_name="Zillager"/>
+            <criterion id="minecraft:witch"         name="女巫"/>
+            <criterion id="minecraft:pillager"         name="掠夺者"/>
+            <criterion id="minecraft:vindicator"         name="卫道士"/>
+            <criterion id="minecraft:evoker"         name="唤魔者"/>
+            <criterion id="minecraft:vex"         name="恼鬼"/>
+            <criterion id="minecraft:ravager"         name="劫掠兽"/>
         </criteria>
     </advancement>
 </group>

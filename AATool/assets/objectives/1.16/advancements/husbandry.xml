@@ -1,93 +1,95 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <group name="Husbandry">
-    <advancement id="minecraft:husbandry/root"                    name="Husbandry"                        icon="husbandry"/>
-    <advancement id="minecraft:husbandry/plant_seed"              name="A Seedy Place"                    short_name="Seedy Place"/>
-    <advancement id="minecraft:husbandry/breed_an_animal"         name="The Parrots and the Bats"         short_name="Parrots"/>
-    <advancement id="minecraft:husbandry/tame_an_animal"          name="Best Friends Forever"             short_name="BFF's"/>
-    <advancement id="minecraft:husbandry/fishy_business"          name="Fishy Business"                   short_name="Fishy Biz"/>
-    <advancement id="minecraft:husbandry/tactical_fishing"        name="Tactical Fishing"                 short_name="Tactical"/>
-    <advancement id="minecraft:husbandry/silk_touch_nest"         name="Total Beelocation" short_name="Beelocation" half="false"/>
-    <advancement id="minecraft:husbandry/safely_harvest_honey"    name="Bee Our Guest" short_name="Our Guest" half="false"/>
-    <advancement id="minecraft:husbandry/obtain_netherite_hoe" name="Serious Dedication" short_name="Dedication" type="challenge" half="false"/>
-    <advancement id="minecraft:husbandry/bred_all_animals"        name="Two by Two" type="challenge" half="false">
-        <criteria goal="Animals Bred">
-            <criterion id="minecraft:pig"/>
-            <criterion id="minecraft:sheep"/>
-            <criterion id="minecraft:chicken"/>
-            <criterion id="minecraft:cow"/>
-            <criterion id="minecraft:mooshroom"/>
-            <criterion id="minecraft:cat"/>
-            <criterion id="minecraft:ocelot"/>
-            <criterion id="minecraft:wolf"/>
-            <criterion id="minecraft:fox"/>
-            <criterion id="minecraft:rabbit"/>
-            <criterion id="minecraft:bee"/>
-            <criterion id="minecraft:horse"/>
-            <criterion id="minecraft:donkey"/>
-            <criterion id="minecraft:mule"/>
-            <criterion id="minecraft:llama"/>
-            <criterion id="minecraft:panda"/>
-            <criterion id="minecraft:turtle"/>
-            <criterion id="minecraft:strider"/>
-            <criterion id="minecraft:hoglin"/>
+    <advancement id="minecraft:husbandry/root"                    name="农牧业"                        icon="husbandry"/>
+    <advancement id="minecraft:husbandry/plant_seed"              name="开荒垦地"                    short_name="开荒垦地"/>
+    <advancement id="minecraft:husbandry/breed_an_animal"         name="我从哪
+儿来？"         short_name="我从哪来"/>
+    <advancement id="minecraft:husbandry/tame_an_animal"          name="永恒的伙伴"             short_name="永恒伙伴"/>
+    <advancement id="minecraft:husbandry/fishy_business"          name="腥味十足
+的生意"                   short_name="腥味十足"/>
+    <advancement id="minecraft:husbandry/tactical_fishing"        name="战术性钓鱼"                 short_name="战术钓鱼"/>
+    <advancement id="minecraft:husbandry/silk_touch_nest"         name="举巢搬迁" short_name="举巢搬迁" half="false"/>
+    <advancement id="minecraft:husbandry/safely_harvest_honey"    name="与蜂共舞" short_name="与蜂共舞" half="false"/>
+    <advancement id="minecraft:husbandry/obtain_netherite_hoe" name="终极奉献" short_name="终极奉献" type="challenge" half="false"/>
+    <advancement id="minecraft:husbandry/bred_all_animals"        name="成双成对" type="challenge" half="false">
+        <criteria goal="繁殖的动物">
+            <criterion id="minecraft:pig"          name="猪"/>
+            <criterion id="minecraft:sheep"          name="绵羊"/>
+            <criterion id="minecraft:chicken"          name="鸡"/>
+            <criterion id="minecraft:cow"          name="牛"/>
+            <criterion id="minecraft:mooshroom"          name="哞菇"/>
+            <criterion id="minecraft:cat"          name="猫"/>
+            <criterion id="minecraft:ocelot"          name="豹猫"/>
+            <criterion id="minecraft:wolf"          name="狼"/>
+            <criterion id="minecraft:fox"          name="狐狸"/>
+            <criterion id="minecraft:rabbit"          name="兔子"/>
+            <criterion id="minecraft:bee"          name="蜜蜂"/>
+            <criterion id="minecraft:horse"          name="马"/>
+            <criterion id="minecraft:donkey"          name="驴"/>
+            <criterion id="minecraft:mule"          name="骡"/>
+            <criterion id="minecraft:llama"          name="羊驼"/>
+            <criterion id="minecraft:panda"          name="熊猫"/>
+            <criterion id="minecraft:turtle"          name="海龟"/>
+            <criterion id="minecraft:strider"          name="炽足兽"/>
+            <criterion id="minecraft:hoglin"          name="疣猪兽"/>
         </criteria>
     </advancement>
-    <advancement id="minecraft:husbandry/balanced_diet"           name="A Balanced Diet" short_name="ABD" type="challenge" half="false">
-        <criteria goal="Foods Eaten">
-            <criterion id="bread"/>
-            <criterion id="cooked_porkchop"        name="Porkchop"/>
-            <criterion id="porkchop"               name="Raw Porkchop"/>
-            <criterion id="cooked_beef"            name="Beef"/>
-            <criterion id="beef"                   name="Raw Beef"/>
-            <criterion id="cooked_chicken"         name="Chicken"/>
-            <criterion id="chicken"                name="Raw Chicken"  icon="raw_chicken"/>
-            <criterion id="cooked_mutton"          name="Mutton"/>
-            <criterion id="mutton"                 name="Raw Mutton"/>
-            <criterion id="cooked_rabbit"          name="Rabbit"/>
-            <criterion id="rabbit"                 name="Raw Rabbit"   icon="raw_rabbit"/>
-            <criterion id="cooked_cod"             name="Cod"/>
-            <criterion id="cod"                    name="Raw Cod"/>
-            <criterion id="tropical_fish"/>
-            <criterion id="cooked_salmon"          name="Salmon"/>
-            <criterion id="salmon"                 name="Raw Salmon"/>
-            <criterion id="pufferfish"/>
-            <criterion id="cookie"/>
-            <criterion id="pumpkin_pie"/>
-            <criterion id="apple"/>
-            <criterion id="golden_apple"/>
-            <criterion id="enchanted_golden_apple" name="God Apple"/>
-            <criterion id="golden_carrot"/>
-            <criterion id="carrot"/>
-            <criterion id="melon_slice"/>
-            <criterion id="baked_potato"/>
-            <criterion id="potato"/>
-            <criterion id="poisonous_potato"       name="Poison Potato"/>
-            <criterion id="beetroot"/>
-            <criterion id="sweet_berries"/>
-            <criterion id="chorus_fruit"/>
-            <criterion id="mushroom_stew"          name="Shroom Stew"/>
-            <criterion id="suspicious_stew"        name="Sus Stew"/>
-            <criterion id="rabbit_stew"/>
-            <criterion id="beetroot_soup"          name="Beet Soup"/>
-            <criterion id="dried_kelp"/>
-            <criterion id="honey_bottle"/>
-            <criterion id="rotten_flesh"/>
-            <criterion id="spider_eye"/>
+    <advancement id="minecraft:husbandry/balanced_diet"           name="均衡饮食" short_name="均衡饮食" type="challenge" half="false">
+        <criteria goal="吃掉的食物">
+            <criterion id="bread"       name="面包"/>
+            <criterion id="cooked_porkchop"        name="熟猪排"/>
+            <criterion id="porkchop"               name="生猪排"/>
+            <criterion id="cooked_beef"            name="熟牛肉"/>
+            <criterion id="beef"                   name="生牛肉"/>
+            <criterion id="cooked_chicken"         name="熟鸡肉"/>
+            <criterion id="chicken"                name="生鸡肉"  icon="raw_chicken"/>
+            <criterion id="cooked_mutton"          name="熟羊肉"/>
+            <criterion id="mutton"                 name="生羊肉"/>
+            <criterion id="cooked_rabbit"          name="熟兔肉"/>
+            <criterion id="rabbit"                 name="生兔肉"   icon="raw_rabbit"/>
+            <criterion id="cooked_cod"             name="熟鳕鱼"/>
+            <criterion id="cod"                    name="生鳕鱼"/>
+            <criterion id="tropical_fish"                name="热带鱼"/>
+            <criterion id="cooked_salmon"          name="熟鲑鱼"/>
+            <criterion id="salmon"                 name="生鲑鱼"/>
+            <criterion id="pufferfish"                name="河豚"/>
+            <criterion id="cookie"                name="曲奇"/>
+            <criterion id="pumpkin_pie"                name="南瓜派"/>
+            <criterion id="apple"                name="苹果"/>
+            <criterion id="golden_apple"                name="金苹果"/>
+            <criterion id="enchanted_golden_apple" name="附魔金苹果"/>
+            <criterion id="golden_carrot"                name="金胡萝卜"/>
+            <criterion id="carrot"                name="胡萝卜"/>
+            <criterion id="melon_slice"                name="西瓜片"/>
+            <criterion id="baked_potato"                name="烤马铃薯"/>
+            <criterion id="potato"                name="马铃薯"/>
+            <criterion id="poisonous_potato"       name="毒马铃薯"/>
+            <criterion id="beetroot"                name="甜菜根"/>
+            <criterion id="sweet_berries"                name="甜浆果"/>
+            <criterion id="chorus_fruit"                name="紫颂果"/>
+            <criterion id="mushroom_stew"          name="蘑菇煲"/>
+            <criterion id="suspicious_stew"        name="谜之炖菜"/>
+            <criterion id="rabbit_stew"                name="兔肉煲"/>
+            <criterion id="beetroot_soup"          name="甜菜汤"/>
+            <criterion id="dried_kelp"                name="干海带"/>
+            <criterion id="honey_bottle"                name="蜂蜜瓶"/>
+            <criterion id="rotten_flesh"                name="腐肉"/>
+            <criterion id="spider_eye"                name="蜘蛛眼 "/>
         </criteria>
     </advancement>
-    <advancement id="minecraft:husbandry/complete_catalogue" name="A Complete Catalogue" short_name="Catalogue" type="challenge" half="false">
-        <criteria goal="Cats">
+    <advancement id="minecraft:husbandry/complete_catalogue" name="百猫全书" short_name="Catalogue" type="challenge" half="false">
+        <criteria goal="驯服的猫咪">
             <criterion id="textures/entity/cat/jellie.png"            name="Jellie"     icon="jellie"/>
-            <criterion id="textures/entity/cat/calico.png"            name="Calico"     icon="calico"/>
-            <criterion id="textures/entity/cat/red.png"               name="Red"        icon="red"/>
-            <criterion id="textures/entity/cat/black.png"             name="Tuxedo"     icon="tuxedo"/>
-            <criterion id="textures/entity/cat/white.png"             name="White"      icon="white"/>
-            <criterion id="textures/entity/cat/ragdoll.png"           name="Ragdoll"    icon="ragdoll"/>
-            <criterion id="textures/entity/cat/british_shorthair.png" name="British"    icon="british_shorthair"/>
-            <criterion id="textures/entity/cat/tabby.png"             name="Tabby"      icon="tabby"/>
-            <criterion id="textures/entity/cat/all_black.png"         name="Black"      icon="black"/>
-            <criterion id="textures/entity/cat/persian.png"           name="Persian"    icon="persian"/>
-            <criterion id="textures/entity/cat/siamese.png"           name="Siamese"    icon="siamese"/>
+            <criterion id="textures/entity/cat/calico.png"            name="花猫"     icon="calico"/>
+            <criterion id="textures/entity/cat/red.png"               name="红虎斑猫"        icon="red"/>
+            <criterion id="textures/entity/cat/black.png"             name="西服猫"     icon="tuxedo"/>
+            <criterion id="textures/entity/cat/white.png"             name="白猫"      icon="white"/>
+            <criterion id="textures/entity/cat/ragdoll.png"           name="布偶猫"    icon="ragdoll"/>
+            <criterion id="textures/entity/cat/british_shorthair.png" name="英国短毛猫"    icon="british_shorthair"/>
+            <criterion id="textures/entity/cat/tabby.png"             name="虎斑猫"      icon="tabby"/>
+            <criterion id="textures/entity/cat/all_black.png"         name="黑猫"      icon="black"/>
+            <criterion id="textures/entity/cat/persian.png"           name="波斯猫"    icon="persian"/>
+            <criterion id="textures/entity/cat/siamese.png"           name="暹罗猫"    icon="siamese"/>
         </criteria>
     </advancement>
 </group>
