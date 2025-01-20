@@ -16,7 +16,7 @@
     <advancement id="minecraft:nether/distract_piglin" name="金光闪闪"/>
     <advancement id="minecraft:nether/obtain_ancient_debris" name="深藏不露" short_name="深藏不露"/>
     <advancement id="minecraft:nether/explore_nether" name="热门景点" short_name="热门景点" type="challenge">
-        <criteria goal="Visited">
+        <criteria goal="访问的群系">
             <criterion id="minecraft:nether_wastes" name="下界荒地" short_name="下界荒地" type="challenge"/>
             <criterion id="minecraft:crimson_forest" name="绯红森林" short_name="绯红森林" type="challenge"/>
             <criterion id="minecraft:warped_forest" name="诡异森林" short_name="诡异森林" type="challenge"/>
