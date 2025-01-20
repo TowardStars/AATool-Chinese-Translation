@@ -124,22 +124,22 @@ namespace AATool.Data.Objectives.Complex
                 return base.GetLongStatus();
 
             if (this.onlyMegaTaigaLeft)
-                return "Still\0Needs\nMega Taiga";
+                return "还需要\n针叶林";
             if (this.onlyMushroomLeft)
-                return "Still\0Needs\nMushroom";
+                return "还需要\n蘑菇岛";
             if (this.onlyBadlandsLeft)
-                return "Still\0Needs\nBadlands";
+                return "还需要\n恶地";
             if (this.onlyBambooLeft)
-                return "Still\0Needs\nBamboo";
+                return "还需要\n竹林";
 
             return base.GetLongStatus();
         }
 
         protected override string LongStatusNormal() => 
-            $"Biomes\n{this.CurrentCriteria}\0/\0{this.RequiredCriteria}";
+            $"造访的群系\n{this.CurrentCriteria}\0/\0{this.RequiredCriteria}";
 
         protected override string LongStatusLast() =>
-            $"Last Biome:\n{FormatBiomeName(this.RemainingCriteria.First())}";
+            $"最后一个群系:\n{FormatBiomeName(this.RemainingCriteria.First())}";
 
         protected override string GetCurrentIcon()
         {

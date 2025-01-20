@@ -232,7 +232,7 @@ namespace AATool.Data.Objectives.Complex
         protected override string GetLongStatus()
         {
             if (this.doneWithBees)
-                return "Done\0With\nBees";
+                return "完成\n与蜂共舞";
 
             if (this.remainingObjectives.Count is 1)
                 return $"{this.remainingObjectives[0]}";
@@ -240,11 +240,11 @@ namespace AATool.Data.Objectives.Complex
             int count = this.estimatedPlaced > 0 
                 ? this.estimatedPlaced 
                 : this.estimatedCount;
-            string name = count is 1 ? "Hive" : "Hives";
+            string name = count is 1 ? "蜂巢" : "蜂巢";
 
             return this.estimatedPlaced > 0 
-                ? $"{this.estimatedPlaced}\0{name}\nPlaced" 
-                : $"{this.estimatedCount}\0{name}\nCollected";
+                ? $"放置了\n{this.estimatedPlaced}{name}" 
+                : $"获取了\n{this.estimatedCount}{name}";
         }
 
         protected override string GetCurrentIcon()

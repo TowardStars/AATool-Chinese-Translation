@@ -116,14 +116,14 @@ namespace AATool.Data.Objectives.Complex
         private string GetStatusAA()
         {
             if (this.vvfDone && (this.surgeDone || this.ignoreSurge))
-                return "Done\0With\nThunder";
+                return "完成魔女审判";
 
             if (this.vvfDone == this.surgeDone || this.ignoreSurge)
             {
                 //not done with either, see if we still need trident too
                 return this.obtained || (this.ManuallyChecked && this.CanBeManuallyChecked)
-                    ? "Awaiting\nThunder"
-                    : "Obtain\nTrident";
+                    ? "等待雷雨"
+                    : "获取三叉戟";
             }
 
             //only one of the two thunder-related advancements are complete

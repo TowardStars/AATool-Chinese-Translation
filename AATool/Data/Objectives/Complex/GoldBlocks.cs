@@ -95,15 +95,15 @@ namespace AATool.Data.Objectives.Complex
         protected override string GetLongStatus()
         {
             if (this.fullBeaconComplete)
-                return "Full\0Beacon\nConstructed";
+                return "完成带信标回家\n和信标工程师";
 
             if (this.ManuallyChecked)
-                return $"All\0Gold\nCollected";
+                return $"金块收集完毕";
 
             if (this.estimatedBlocks > 0)
                 return $"Gold\0Estimate\n{this.estimatedBlocks}\0/\0{Required}";
 
-            return $"Gold\0Blocks\n0\0/\0{Required}";  
+            return $"金块\n0\0/\0{Required}";  
         }
 
         protected override string GetCurrentIcon()

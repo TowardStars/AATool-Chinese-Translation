@@ -108,15 +108,15 @@ namespace AATool.Data.Objectives.Complex
             }
 
             if (this.witherKilled)
-                return "Wither\0Has\nBeen\0Killed";
+                return "杀死凋零";
 
             if (this.witherSummoned)
-                return "Wither\nSummoned";
+                return "生成凋零";
 
             if (this.EstimatedObtained >= this.Required)
-                return $"{this.EstimatedObtained}\0/\0{this.Required}\nKilled:\0{this.witherSkeletonsKilled}";
+                return $"{this.EstimatedObtained}\0/\0{this.Required}\n击杀:\0{this.witherSkeletonsKilled}";
 
-            return $"Skulls\n{this.EstimatedObtained}\0/\0{this.Required}";
+            return $"凋零骷髅头\n{this.EstimatedObtained}\0/\0{this.Required}";
         }
 
         protected override string GetCurrentIcon()

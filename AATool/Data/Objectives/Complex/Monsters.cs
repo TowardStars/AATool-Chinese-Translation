@@ -95,7 +95,7 @@ namespace AATool.Data.Objectives.Complex
         }
 
         protected override string LongStatusNormal() =>
-            $"Mobs\0Killed\n{this.CurrentCriteria}\0/\0{this.RequiredCriteria}";
+            $"杀掉的怪物\n{this.CurrentCriteria}\0/\0{this.RequiredCriteria}";
 
         protected override string GetCurrentIcon()
         {

@@ -50,15 +50,15 @@ namespace AATool.Data.Objectives.Complex
         protected override string GetLongStatus()
         {
             if (this.CompletionOverride)
-                return $"All\0Food\nEaten";
+                return $"完成均衡饮食";
 
             if (this.onlyHdwghRemaining)
-                return "Awaiting\nHDWGH";
+                return "等待全效果";
 
             if (this.OnLastCriterion)
-                return $"Last\0Food:\n{this.RemainingCriteria.First()}";
+                return $"剩下食物:\n{this.RemainingCriteria.First()}";
 
-            return $"Food\0Eaten\n{this.CurrentCriteria}\0/\0{this.RequiredCriteria}";
+            return $"吃掉的食物\n{this.CurrentCriteria}\0/\0{this.RequiredCriteria}";
         }
     }
 }

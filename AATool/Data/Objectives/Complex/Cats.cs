@@ -41,15 +41,15 @@ namespace AATool.Data.Objectives.Complex
         protected override string GetLongStatus()
         {
             if (this.CompletionOverride)
-                return "Done\0With\nCats";
+                return "完成百猫全书";
 
             if (this.RemainingCriteria.Count is 1)
-                return $"Last\0Cat:\n{this.RemainingCriteria.First()}";
+                return $"最后一种猫咪:\n{this.RemainingCriteria.First()}";
             
             if (this.catalogueComplete && !this.breedCats)
-                return "Needs\0To\nBreed\0Cats";
+                return "需要繁殖猫咪";
 
-            return $"Cats\0Tamed\n{this.CurrentCriteria}\0/\0{this.RequiredCriteria}";
+            return $"驯服的猫咪\n{this.CurrentCriteria}\0/\0{this.RequiredCriteria}";
         }
     }
 }

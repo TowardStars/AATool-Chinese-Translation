@@ -108,15 +108,15 @@ namespace AATool.Data.Objectives.Complex
         protected override string GetLongStatus()
         {
             if (this.AllNetheriteAdvancementsComplete)
-                return "Done\0With\nNetherite";
+                return "完成残骸裹身\n和终极奉献";
 
             if (this.PlacedNetheriteBlock)
                 return "Netherite\nPlaced";
 
             if (this.EstimatedDebris >= Required || this.ManuallyChecked)
-                return "All\0Debris\nCollected";
+                return "残骸收集完毕";
             
-            return $"Debris:\0{this.EstimatedDebris}\nTNT:\0{Math.Max(this.EstimatedTnt, 0)}";
+            return $"远古残骸:\0{this.EstimatedDebris}\nTNT:\0{Math.Max(this.EstimatedTnt, 0)}";
         }
 
         protected override string GetCurrentIcon()

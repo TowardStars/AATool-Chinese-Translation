@@ -61,12 +61,12 @@ namespace AATool.Data.Objectives.Complex
         protected override string GetLongStatus()
         {
             if (this.Eaten)
-                return "God\0Apple\nEaten";
+                return "已吃\n附魔金苹果";
 
             if (this.Looted || this.ManuallyChecked)
-                return "Obtained\nGod\0Apple";
+                return "获得\n附魔金苹果";
             
-            return "Obtain\nGod\0Apple";
+            return "获取\n附魔金苹果";
         }
 
         protected override string GetCurrentIcon()

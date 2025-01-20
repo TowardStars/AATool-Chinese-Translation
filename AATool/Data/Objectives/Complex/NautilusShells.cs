@@ -66,15 +66,15 @@ namespace AATool.Data.Objectives.Complex
         protected override string GetLongStatus()
         {
             if (Tracker.Category is not AllBlocks && this.hdwghComplete)
-                return "HDWGH\nComplete";
+                return "全效果完成";
 
             if (this.conduitPlaced)
-                return "Conduit\nPlaced";
+                return "放置潮涌核心";
 
             if (this.conduitCrafted)
-                return "Conduit\nCrafted";
+                return "合成潮涌核心";
 
-            return $"Shells\n{this.Obtained}\0/\0{this.Required}";
+            return $"鹦鹉螺壳\n{this.Obtained}\0/\0{this.Required}";
         }
 
         protected override string GetCurrentIcon()

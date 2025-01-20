@@ -20,7 +20,7 @@ namespace AATool.Data.Objectives.Complex
             if (this.OnLastCriterion)
                 return $"Last\0{this.Criterion}:\n{this.RemainingCriteria.First()}";
 
-            return $"Animals\0Bred\n{this.CurrentCriteria}\0/\0{this.RequiredCriteria}";
+            return $"繁殖的动物\n{this.CurrentCriteria}\0/\0{this.RequiredCriteria}";
         }
     }
 }
