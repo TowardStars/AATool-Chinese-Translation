@@ -123,7 +123,7 @@ namespace AATool.Data.Objectives.Complex
                 //not done with either, see if we still need trident too
                 return this.obtained || (this.ManuallyChecked && this.CanBeManuallyChecked)
                     ? "等待雷雨"
-                    : "获取三叉戟";
+                    : "尚未获得\n三叉戟";
             }
 
             //only one of the two thunder-related advancements are complete

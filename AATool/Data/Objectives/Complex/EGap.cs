@@ -66,7 +66,7 @@ namespace AATool.Data.Objectives.Complex
             if (this.Looted || this.ManuallyChecked)
                 return "获得\n附魔金苹果";
             
-            return "获取\n附魔金苹果";
+            return "尚未获得\n附魔金苹果";
         }
 
         protected override string GetCurrentIcon()

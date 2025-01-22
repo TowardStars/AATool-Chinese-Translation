@@ -26,13 +26,13 @@
     <advancement id="minecraft:adventure/totem_of_undying"      name="超越生死"               type="goal" half="false"/>
     <advancement id="minecraft:adventure/adventuring_time"      name="探索的时光" short_name="探索时光" type="challenge" half="false">
         <criteria goal="访问的群系">
-            <criterion id="minecraft:plains"  name="平原"/>
-            <criterion id="minecraft:forest"  name="森林"/>
-            <criterion id="minecraft:wooded_hills"     name="繁茂的丘陵"         short_name="Wooded Hills"/>
-            <criterion id="minecraft:birch_forest"  name="桦木森林"/>
+            <criterion id="minecraft:plains"                    name="平原"/>
+            <criterion id="minecraft:forest"                    name="森林"/>
+            <criterion id="minecraft:wooded_hills"              name="繁茂的丘陵"         short_name="Wooded Hills"/>
+            <criterion id="minecraft:birch_forest"              name="桦木森林"/>
             <criterion id="minecraft:birch_forest_hills"        name="桦木森林丘陵"/>
-            <criterion id="minecraft:dark_forest" name="黑森林"/>
-            <criterion id="minecraft:swamp" name="沼泽"/>
+            <criterion id="minecraft:dark_forest"               name="黑森林"/>
+            <criterion id="minecraft:swamp"                     name="沼泽"/>
             <criterion id="minecraft:taiga"                     name="针叶林"/>
             <criterion id="minecraft:taiga_hills"               name="针叶林丘陵"/>
             <criterion id="minecraft:giant_tree_taiga"          name="巨型针叶林"/>
@@ -46,27 +46,27 @@
             <criterion id="minecraft:river"                     name="河流"/>
             <criterion id="minecraft:desert"                    name="沙漠"/>
             <criterion id="minecraft:desert_hills"              name="沙漠丘陵"/>
-            <criterion id="minecraft:savanna"                 name="热带草原"/>
+            <criterion id="minecraft:savanna"                   name="热带草原"/>
             <criterion id="minecraft:savanna_plateau"           name="热带高原"/>
-            <criterion id="minecraft:jungle"                 name="丛林"/>
-            <criterion id="minecraft:jungle_edge"                 name="稀疏丛林"/>
-            <criterion id="minecraft:jungle_hills"                 name="丛林丘陵"/>
-            <criterion id="minecraft:bamboo_jungle"                      name="竹林"        short_name="Bamboo"/>
+            <criterion id="minecraft:jungle"                    name="丛林"/>
+            <criterion id="minecraft:jungle_edge"               name="稀疏丛林"/>
+            <criterion id="minecraft:jungle_hills"              name="丛林丘陵"/>
+            <criterion id="minecraft:bamboo_jungle"             name="竹林"        short_name="Bamboo"/>
             <criterion id="minecraft:bamboo_jungle_hills"       name="竹林丘陵"/>
-            <criterion id="minecraft:stone_shore"                       name="石岸"         short_name="Stn Shore"/>
+            <criterion id="minecraft:stone_shore"               name="石岸"         short_name="Stn Shore"/>
             <criterion id="minecraft:mountains"                 name="山地"/>
             <criterion id="minecraft:wooded_mountains"          name="繁茂的山地"/>
-            <criterion id="minecraft:badlands"                 name="恶地"/>
+            <criterion id="minecraft:badlands"                  name="恶地"/>
             <criterion id="minecraft:badlands_plateau"          name="恶地高原"    short_name="Bad Plat"/>
             <criterion id="minecraft:wooded_badlands_plateau"   name="繁茂的恶地高原" short_name="Wood Plat"/>
-            <criterion id="minecraft:mushroom_fields"                     name="蘑菇岛"       short_name="Mushroom"/>
+            <criterion id="minecraft:mushroom_fields"           name="蘑菇岛"       short_name="Mushroom"/>
             <criterion id="minecraft:mushroom_field_shore"      name="蘑菇岛岸"       short_name="MushShore"/>
-            <criterion id="minecraft:beach"                 name="沙滩"/>
-            <criterion id="minecraft:warm_ocean"                                name="暖水海洋"                         short_name="Warm"/>
-            <criterion id="minecraft:lukewarm_ocean"                            name="温水海洋"                         short_name="Lukewarm"/>
+            <criterion id="minecraft:beach"                     name="沙滩"/>
+            <criterion id="minecraft:warm_ocean"                name="暖水海洋"                         short_name="Warm"/>
+            <criterion id="minecraft:lukewarm_ocean"            name="温水海洋"                         short_name="Lukewarm"/>
             <criterion id="minecraft:deep_lukewarm_ocean"       name="温水深海"    short_name="Deep LW"/>
-            <criterion id="minecraft:cold_ocean"                                 name="冷水海洋"                        short_name="Cold"/>
-            <criterion id="minecraft:deep_cold_ocean"                               name="冷水深海"                     short_name="Deep C"/>
+            <criterion id="minecraft:cold_ocean"                name="冷水海洋"                        short_name="Cold"/>
+            <criterion id="minecraft:deep_cold_ocean"           name="冷水深海"                     short_name="Deep C"/>
             <criterion id="minecraft:deep_frozen_ocean"         name="冰冻深海"      short_name="DF"/>
         </criteria>
     </advancement>
@@ -100,12 +100,12 @@
             <criterion id="minecraft:guardian"         name="守卫者"/>
             <criterion id="minecraft:elder_guardian"         name="远古守卫者"/>
             <criterion id="minecraft:zombie_villager"           name="僵尸村民"    short_name="Zillager"/>
-            <criterion id="minecraft:witch"         name="女巫"/>
+            <criterion id="minecraft:witch"            name="女巫"/>
             <criterion id="minecraft:pillager"         name="掠夺者"/>
-            <criterion id="minecraft:vindicator"         name="卫道士"/>
-            <criterion id="minecraft:evoker"         name="唤魔者"/>
-            <criterion id="minecraft:vex"         name="恼鬼"/>
-            <criterion id="minecraft:ravager"         name="劫掠兽"/>
+            <criterion id="minecraft:vindicator"       name="卫道士"/>
+            <criterion id="minecraft:evoker"           name="唤魔者"/>
+            <criterion id="minecraft:vex"              name="恼鬼"/>
+            <criterion id="minecraft:ravager"           name="劫掠兽"/>
         </criteria>
     </advancement>
 </group>

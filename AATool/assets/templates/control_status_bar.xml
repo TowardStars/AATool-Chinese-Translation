@@ -2,7 +2,7 @@
 <control>
     <!-- settings button -->
     <panel name="settings" width="82" horizontal_align="left">
-        <button text="Settings" width="70" height="30" horizontal_align="left" margin_left="6"/>
+        <button text="设置" width="70" height="30" horizontal_align="left" margin_left="6"/>
     </panel>
     <!-- status -->
     <panel name="status" width="310" horizontal_align="left" margin_left="82">

@@ -100,7 +100,7 @@ namespace AATool.Winforms.Controls
             this.autoVersion.Name = "autoVersion";
             this.autoVersion.Size = new System.Drawing.Size(83, 17);
             this.autoVersion.TabIndex = 26;
-            this.autoVersion.Text = "Auto-Detect";
+            this.autoVersion.Text = "自动检测";
             this.autoVersion.UseVisualStyleBackColor = true;
             this.autoVersion.CheckedChanged += new System.EventHandler(this.OnCheckChanged);
             // 
@@ -267,7 +267,7 @@ namespace AATool.Winforms.Controls
             this.groupBox3.Size = new System.Drawing.Size(107, 96);
             this.groupBox3.TabIndex = 29;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "World Type";
+            this.groupBox3.Text = "世界类型";
             // 
             // worldLocal
             // 
@@ -278,7 +278,7 @@ namespace AATool.Winforms.Controls
             this.worldLocal.Size = new System.Drawing.Size(79, 17);
             this.worldLocal.TabIndex = 35;
             this.worldLocal.TabStop = true;
-            this.worldLocal.Text = "Local Save";
+            this.worldLocal.Text = "本地存档";
             this.worldLocal.UseVisualStyleBackColor = true;
             this.worldLocal.CheckedChanged += new System.EventHandler(this.OnCheckChanged);
             // 
@@ -291,7 +291,7 @@ namespace AATool.Winforms.Controls
             this.worldRemote.Size = new System.Drawing.Size(98, 17);
             this.worldRemote.TabIndex = 36;
             this.worldRemote.TabStop = true;
-            this.worldRemote.Text = "Remote (SFTP)";
+            this.worldRemote.Text = "远程(SFTP)";
             this.worldRemote.UseVisualStyleBackColor = true;
             this.worldRemote.CheckedChanged += new System.EventHandler(this.OnCheckChanged);
             // 
@@ -304,7 +304,7 @@ namespace AATool.Winforms.Controls
             this.groupBox1.Size = new System.Drawing.Size(113, 81);
             this.groupBox1.TabIndex = 30;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Game Version";
+            this.groupBox1.Text = "游戏版本";
             // 
             // remoteGroup
             // 
@@ -481,7 +481,7 @@ namespace AATool.Winforms.Controls
             this.groupBox2.Size = new System.Drawing.Size(154, 81);
             this.groupBox2.TabIndex = 32;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Speedrun Category";
+            this.groupBox2.Text = "速通类型";
             // 
             // category
             // 

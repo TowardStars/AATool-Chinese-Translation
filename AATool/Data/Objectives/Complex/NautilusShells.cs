@@ -66,13 +66,13 @@ namespace AATool.Data.Objectives.Complex
         protected override string GetLongStatus()
         {
             if (Tracker.Category is not AllBlocks && this.hdwghComplete)
-                return "全效果完成";
+                return "全效果\n已完成";
 
             if (this.conduitPlaced)
-                return "放置潮涌核心";
+                return "潮涌核心\n已放置";
 
             if (this.conduitCrafted)
-                return "合成潮涌核心";
+                return "潮涌核心\n已和成";
 
             return $"鹦鹉螺壳\n{this.Obtained}\0/\0{this.Required}";
         }

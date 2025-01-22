@@ -87,7 +87,7 @@
             this.update.Name = "update";
             this.update.Size = new System.Drawing.Size(120, 32);
             this.update.TabIndex = 23;
-            this.update.Text = "Check for Updates";
+            this.update.Text = "检查更新";
             this.update.UseVisualStyleBackColor = true;
             this.update.Click += new System.EventHandler(this.OnButtonClick);
             // 

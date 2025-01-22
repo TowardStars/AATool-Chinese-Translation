@@ -244,7 +244,7 @@ namespace AATool.Data.Objectives.Complex
 
             return this.estimatedPlaced > 0 
                 ? $"放置了\n{this.estimatedPlaced}{name}" 
-                : $"获取了\n{this.estimatedCount}{name}";
+                : $"获得了\n{this.estimatedCount}{name}";
         }
 
         protected override string GetCurrentIcon()
