@@ -53,8 +53,7 @@ namespace AATool.Winforms.Forms
             }
             else if (sender == this.reset)
             {
-                string msg = "This will clear all customized settings including themes, your custom save path, " +
-                    "and co-op info. Are you sure you want to revert to the default settings?";
+                string msg = "这将清除所有自定义设置，包括主题、您的自定义存档路径和合作信息等。您确实要恢复为默认设置？";
                 DialogResult confirmation = MessageBox.Show(this, msg, "Warning!", 
                     MessageBoxButtons.YesNo, 
                     MessageBoxIcon.Warning, 

@@ -90,7 +90,7 @@ namespace AATool.Winforms.Controls
             this.overlayGroupTheme.Size = new System.Drawing.Size(324, 67);
             this.overlayGroupTheme.TabIndex = 34;
             this.overlayGroupTheme.TabStop = false;
-            this.overlayGroupTheme.Text = "Green Screen";
+            this.overlayGroupTheme.Text = "绿幕颜色";
             // 
             // restoreDefaultGreen
             // 
@@ -163,7 +163,7 @@ namespace AATool.Winforms.Controls
             this.overlayGroupAppearance.Size = new System.Drawing.Size(185, 226);
             this.overlayGroupAppearance.TabIndex = 33;
             this.overlayGroupAppearance.TabStop = false;
-            this.overlayGroupAppearance.Text = "Layout";
+            this.overlayGroupAppearance.Text = "布局";
             // 
             // label14
             // 
@@ -174,7 +174,7 @@ namespace AATool.Winforms.Controls
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(95, 40);
             this.label14.TabIndex = 54;
-            this.label14.Text = "🛈 Shells, Skulls, Trident etc.";
+            this.label14.Text = "🛈 鹦鹉螺壳、凋零骷髅头、三叉戟等";
             // 
             // label13
             // 
@@ -185,7 +185,7 @@ namespace AATool.Winforms.Controls
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(95, 40);
             this.label13.TabIndex = 53;
-            this.label13.Text = "🛈 Says how long it\'s been since the tracker refreshed";
+            this.label13.Text = "🛈 显示距离上次刷新追踪过去了多长时间。";
             // 
             // showIgt
             // 
@@ -194,7 +194,7 @@ namespace AATool.Winforms.Controls
             this.showIgt.Name = "showIgt";
             this.showIgt.Size = new System.Drawing.Size(122, 17);
             this.showIgt.TabIndex = 28;
-            this.showIgt.Text = "Show In-Game Time";
+            this.showIgt.Text = "显示游戏内时间";
             this.showIgt.UseVisualStyleBackColor = true;
             this.showIgt.CheckedChanged += new System.EventHandler(this.OnCheckChanged);
             // 
@@ -205,7 +205,7 @@ namespace AATool.Winforms.Controls
             this.showText.Name = "showText";
             this.showText.Size = new System.Drawing.Size(135, 17);
             this.showText.TabIndex = 15;
-            this.showText.Text = "Show Objective Labels";
+            this.showText.Text = "显示进度名称";
             this.showText.UseVisualStyleBackColor = true;
             this.showText.CheckedChanged += new System.EventHandler(this.OnCheckChanged);
             // 
@@ -217,7 +217,7 @@ namespace AATool.Winforms.Controls
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(76, 13);
             this.label10.TabIndex = 45;
-            this.label10.Text = "Refresh Label:";
+            this.label10.Text = "刷新标签：";
             // 
             // clarifyAmbiguous
             // 
@@ -226,7 +226,7 @@ namespace AATool.Winforms.Controls
             this.clarifyAmbiguous.Name = "clarifyAmbiguous";
             this.clarifyAmbiguous.Size = new System.Drawing.Size(144, 17);
             this.clarifyAmbiguous.TabIndex = 42;
-            this.clarifyAmbiguous.Text = "Clarify Ambiguous Criteria";
+            this.clarifyAmbiguous.Text = "明确不清晰的任务";
             this.clarifyAmbiguous.UseVisualStyleBackColor = true;
             this.clarifyAmbiguous.CheckedChanged += new System.EventHandler(this.OnCheckChanged);
             // 
@@ -237,7 +237,7 @@ namespace AATool.Winforms.Controls
             this.showCriteria.Name = "showCriteria";
             this.showCriteria.Size = new System.Drawing.Size(113, 17);
             this.showCriteria.TabIndex = 26;
-            this.showCriteria.Text = "Show Criteria Row";
+            this.showCriteria.Text = "显示任务行";
             this.showCriteria.UseVisualStyleBackColor = true;
             this.showCriteria.CheckedChanged += new System.EventHandler(this.OnCheckChanged);
             // 
@@ -263,7 +263,7 @@ namespace AATool.Winforms.Controls
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 13);
             this.label1.TabIndex = 30;
-            this.label1.Text = "Pinned Row:";
+            this.label1.Text = "固定行：";
             // 
             // pickupPosition
             // 
@@ -300,7 +300,7 @@ namespace AATool.Winforms.Controls
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(113, 13);
             this.label4.TabIndex = 49;
-            this.label4.Text = "Custom Theme Colors:";
+            this.label4.Text = "自定义框架颜色：";
             // 
             // backColor
             // 
@@ -320,7 +320,7 @@ namespace AATool.Winforms.Controls
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(32, 13);
             this.label7.TabIndex = 46;
-            this.label7.Text = "Text";
+            this.label7.Text = "文本";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label9
@@ -331,7 +331,7 @@ namespace AATool.Winforms.Controls
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(38, 13);
             this.label9.TabIndex = 48;
-            this.label9.Text = "Border";
+            this.label9.Text = "边框";
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // borderColor
@@ -352,7 +352,7 @@ namespace AATool.Winforms.Controls
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(32, 13);
             this.label8.TabIndex = 44;
-            this.label8.Text = "Back";
+            this.label8.Text = "背景";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label3
@@ -363,7 +363,7 @@ namespace AATool.Winforms.Controls
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 24;
-            this.label3.Text = "Width:";
+            this.label3.Text = "宽度：";
             // 
             // overlayWidth
             // 
@@ -401,7 +401,7 @@ namespace AATool.Winforms.Controls
             this.overlayGroupBehavior.Size = new System.Drawing.Size(200, 175);
             this.overlayGroupBehavior.TabIndex = 32;
             this.overlayGroupBehavior.TabStop = false;
-            this.overlayGroupBehavior.Text = "General";
+            this.overlayGroupBehavior.Text = "常规";
             // 
             // label12
             // 
@@ -412,8 +412,7 @@ namespace AATool.Winforms.Controls
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(194, 42);
             this.label12.TabIndex = 52;
-            this.label12.Text = "🛈 You can edit the objectives shown on the bottom row of the overlay by simply c" +
-    "licking and dragging them!";
+            this.label12.Text = "🛈 你可以更改覆盖窗口最后一行元素的位置，只需要按住并拖动它。";
             // 
             // label2
             // 
@@ -423,7 +422,7 @@ namespace AATool.Winforms.Controls
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 13);
             this.label2.TabIndex = 46;
-            this.label2.Text = "Scroll Direction:";
+            this.label2.Text = "滚动方向：";
             // 
             // enabled
             // 
@@ -432,7 +431,7 @@ namespace AATool.Winforms.Controls
             this.enabled.Name = "enabled";
             this.enabled.Size = new System.Drawing.Size(140, 17);
             this.enabled.TabIndex = 9;
-            this.enabled.Text = "Enable Overlay Window";
+            this.enabled.Text = "启用覆盖窗口";
             this.enabled.UseVisualStyleBackColor = true;
             this.enabled.CheckedChanged += new System.EventHandler(this.OnCheckChanged);
             // 
@@ -444,7 +443,7 @@ namespace AATool.Winforms.Controls
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(41, 13);
             this.label5.TabIndex = 23;
-            this.label5.Text = "Speed:";
+            this.label5.Text = "滚动速度：";
             // 
             // direction
             // 
@@ -486,7 +485,7 @@ namespace AATool.Winforms.Controls
             this.groupBox2.Size = new System.Drawing.Size(200, 120);
             this.groupBox2.TabIndex = 50;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Startup Behavior";
+            this.groupBox2.Text = "启动设置";
             // 
             // label16
             // 
@@ -496,7 +495,7 @@ namespace AATool.Winforms.Controls
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(45, 13);
             this.label16.TabIndex = 42;
-            this.label16.Text = "Monitor:";
+            this.label16.Text = "显示器：";
             // 
             // startupPosition
             // 
@@ -523,7 +522,7 @@ namespace AATool.Winforms.Controls
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(47, 13);
             this.label15.TabIndex = 40;
-            this.label15.Text = "Position:";
+            this.label15.Text = "位置：";
             // 
             // startupMonitor
             // 
@@ -552,7 +551,7 @@ namespace AATool.Winforms.Controls
             this.groupBox1.Size = new System.Drawing.Size(130, 226);
             this.groupBox1.TabIndex = 51;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Styling";
+            this.groupBox1.Text = "样式";
             // 
             // frameStyle
             // 
@@ -575,7 +574,7 @@ namespace AATool.Winforms.Controls
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(92, 13);
             this.label6.TabIndex = 41;
-            this.label6.Text = "Objective Frames:";
+            this.label6.Text = "图标框架：";
             // 
             // COverlaySettings
             // 

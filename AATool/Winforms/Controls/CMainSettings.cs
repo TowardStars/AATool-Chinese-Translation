@@ -194,7 +194,7 @@ namespace AATool.Winforms.Controls
 
             if (!string.IsNullOrEmpty(name))
             {
-                this.labelBadgeAvailability.Text = $"🛈 These are the badges and frames available to {name}.";
+                this.labelBadgeAvailability.Text = $"🛈 这些是可以用于{name}的徽章和框架。";
                 if (supporter.HighestRole is Credits.NetheriteTier)
                 {
                     this.labelBadgeAvailability.Text += " Thanks for your incredible support!";

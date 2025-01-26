@@ -61,7 +61,7 @@
             this.done.Name = "done";
             this.done.Size = new System.Drawing.Size(120, 32);
             this.done.TabIndex = 5;
-            this.done.Text = "Done";
+            this.done.Text = "完成";
             this.done.UseVisualStyleBackColor = true;
             this.done.Click += new System.EventHandler(this.OnButtonClick);
             // 
@@ -77,7 +77,7 @@
             this.reset.Name = "reset";
             this.reset.Size = new System.Drawing.Size(120, 32);
             this.reset.TabIndex = 20;
-            this.reset.Text = "Reset to Defaults";
+            this.reset.Text = "重置为默认";
             this.reset.UseVisualStyleBackColor = true;
             this.reset.Click += new System.EventHandler(this.OnButtonClick);
             // 
@@ -112,7 +112,7 @@
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Size = new System.Drawing.Size(542, 314);
             this.tabPage1.TabIndex = 4;
-            this.tabPage1.Text = "Tracking";
+            this.tabPage1.Text = "追踪";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tracker
@@ -131,7 +131,7 @@
             this.tabMain.Padding = new System.Windows.Forms.Padding(3);
             this.tabMain.Size = new System.Drawing.Size(542, 314);
             this.tabMain.TabIndex = 0;
-            this.tabMain.Text = "Application";
+            this.tabMain.Text = "应用";
             this.tabMain.UseVisualStyleBackColor = true;
             // 
             // main
@@ -150,7 +150,7 @@
             this.tabOverlay.Padding = new System.Windows.Forms.Padding(3);
             this.tabOverlay.Size = new System.Drawing.Size(542, 314);
             this.tabOverlay.TabIndex = 1;
-            this.tabOverlay.Text = "Overlay";
+            this.tabOverlay.Text = "覆盖";
             this.tabOverlay.UseVisualStyleBackColor = true;
             // 
             // overlay
@@ -187,7 +187,7 @@
             this.tabDebug.Name = "tabDebug";
             this.tabDebug.Size = new System.Drawing.Size(542, 314);
             this.tabDebug.TabIndex = 3;
-            this.tabDebug.Text = "Debug";
+            this.tabDebug.Text = "调试";
             this.tabDebug.UseVisualStyleBackColor = true;
             // 
             // debug
@@ -225,7 +225,7 @@
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Application Settings";
+            this.Text = "应用设置";
             this.Activated += new System.EventHandler(this.OnActivated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OnFormClosing);
             this.tabs.ResumeLayout(false);

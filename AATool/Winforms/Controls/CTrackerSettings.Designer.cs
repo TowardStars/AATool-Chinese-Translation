@@ -132,7 +132,7 @@ namespace AATool.Winforms.Controls
             this.localGroup.Size = new System.Drawing.Size(417, 214);
             this.localGroup.TabIndex = 23;
             this.localGroup.TabStop = false;
-            this.localGroup.Text = "Local Save Tracking";
+            this.localGroup.Text = "本地存档追踪";
             // 
             // label9
             // 
@@ -144,7 +144,7 @@ namespace AATool.Winforms.Controls
             this.label9.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
             this.label9.Size = new System.Drawing.Size(167, 15);
             this.label9.TabIndex = 44;
-            this.label9.Text = "🛈 AATool will only track this world";
+            this.label9.Text = "🛈 选择到具体的世界文件夹，AATool将只会追踪该世界。";
             // 
             // label2
             // 
@@ -156,7 +156,7 @@ namespace AATool.Winforms.Controls
             this.label2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
             this.label2.Size = new System.Drawing.Size(212, 15);
             this.label2.TabIndex = 43;
-            this.label2.Text = "🛈 AATool will only track worlds in this folder";
+            this.label2.Text = "🛈 选择到saves文件夹，AATool将只会追踪该文件夹中的世界。";
             // 
             // browseWorld
             // 
@@ -178,7 +178,7 @@ namespace AATool.Winforms.Controls
             this.TrackSpecificWorld.Size = new System.Drawing.Size(128, 17);
             this.TrackSpecificWorld.TabIndex = 41;
             this.TrackSpecificWorld.TabStop = true;
-            this.TrackSpecificWorld.Text = "Track Specific World:";
+            this.TrackSpecificWorld.Text = "追踪特定世界:";
             this.TrackSpecificWorld.UseVisualStyleBackColor = true;
             this.TrackSpecificWorld.CheckedChanged += new System.EventHandler(this.OnCheckChanged);
             // 
@@ -210,8 +210,7 @@ namespace AATool.Winforms.Controls
             this.label8.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
             this.label8.Size = new System.Drawing.Size(401, 15);
             this.label8.TabIndex = 37;
-            this.label8.Text = "🛈 AATool will instantly detect and track the correct path when you switch instan" +
-    "ces";
+            this.label8.Text = "🛈 当你切换实例时，AATool 将立即检测并追踪正确的路径。";
             // 
             // trackActiveInstance
             // 
@@ -222,7 +221,7 @@ namespace AATool.Winforms.Controls
             this.trackActiveInstance.Size = new System.Drawing.Size(185, 17);
             this.trackActiveInstance.TabIndex = 9;
             this.trackActiveInstance.TabStop = true;
-            this.trackActiveInstance.Text = "Seamlessly Track Active Instance";
+            this.trackActiveInstance.Text = "无缝追踪活动实例：";
             this.trackActiveInstance.UseVisualStyleBackColor = true;
             this.trackActiveInstance.CheckedChanged += new System.EventHandler(this.OnCheckChanged);
             // 
@@ -235,7 +234,7 @@ namespace AATool.Winforms.Controls
             this.trackCustomSavesFolder.Size = new System.Drawing.Size(159, 17);
             this.trackCustomSavesFolder.TabIndex = 8;
             this.trackCustomSavesFolder.TabStop = true;
-            this.trackCustomSavesFolder.Text = "Track Custom Saves Folder:";
+            this.trackCustomSavesFolder.Text = "追踪自动定义存档文件夹：";
             this.trackCustomSavesFolder.UseVisualStyleBackColor = true;
             this.trackCustomSavesFolder.CheckedChanged += new System.EventHandler(this.OnCheckChanged);
             // 
@@ -565,7 +564,7 @@ namespace AATool.Winforms.Controls
             this.groupBox5.Size = new System.Drawing.Size(107, 112);
             this.groupBox5.TabIndex = 70;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Player Filtering";
+            this.groupBox5.Text = "玩家筛选";
             // 
             // soloAvatar
             // 
@@ -586,7 +585,7 @@ namespace AATool.Winforms.Controls
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(95, 13);
             this.label10.TabIndex = 75;
-            this.label10.Text = "Your Name/UUID:";
+            this.label10.Text = "你的名字/UUID:";
             // 
             // filterSolo
             // 
@@ -597,7 +596,7 @@ namespace AATool.Winforms.Controls
             this.filterSolo.Size = new System.Drawing.Size(46, 17);
             this.filterSolo.TabIndex = 73;
             this.filterSolo.TabStop = true;
-            this.filterSolo.Text = "Solo";
+            this.filterSolo.Text = "单人";
             this.filterSolo.UseVisualStyleBackColor = true;
             this.filterSolo.CheckedChanged += new System.EventHandler(this.OnCheckChanged);
             // 
@@ -610,7 +609,7 @@ namespace AATool.Winforms.Controls
             this.filterCombined.Size = new System.Drawing.Size(72, 17);
             this.filterCombined.TabIndex = 74;
             this.filterCombined.TabStop = true;
-            this.filterCombined.Text = "Combined";
+            this.filterCombined.Text = "多人";
             this.filterCombined.UseVisualStyleBackColor = true;
             this.filterCombined.CheckedChanged += new System.EventHandler(this.OnCheckChanged);
             // 
@@ -638,7 +637,7 @@ namespace AATool.Winforms.Controls
             this.label12.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
             this.label12.Size = new System.Drawing.Size(239, 15);
             this.label12.TabIndex = 71;
-            this.label12.Text = "🛈 You can open this window by pressing Escape";
+            this.label12.Text = "🛈 你可以按ESC打开该页面。";
             // 
             // sftpAutoSaveMinutes
             // 

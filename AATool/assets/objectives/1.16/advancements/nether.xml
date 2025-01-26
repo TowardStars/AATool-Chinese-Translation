@@ -2,7 +2,8 @@
 <group name="Nether">
     <advancement id="minecraft:nether/return_to_sender" name="见鬼去吧" short_name="见鬼去吧" type="challenge"/>
     <advancement id="minecraft:nether/use_lodestone" name="天涯共此石" short_name="天涯石" half="false"/>
-    <advancement id="minecraft:nether/charge_respawn_anchor" name="锚没有九条命" short_name="锚九条命"/>
+    <advancement id="minecraft:nether/charge_respawn_anchor" name="锚没有
+九条命" short_name="锚九条命"/>
     <advancement id="minecraft:nether/obtain_crying_obsidian" name="谁在切洋葱？" short_name="谁切洋葱？"/>
     <advancement id="minecraft:nether/loot_bastion" name="战猪"/>
     <advancement id="minecraft:nether/find_bastion" name="光辉岁月" short_name="光辉岁月"/>

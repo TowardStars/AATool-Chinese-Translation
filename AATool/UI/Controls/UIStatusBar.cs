@@ -141,7 +141,7 @@ namespace AATool.UI.Controls
             if (this.rightPanelWidth > 250)
             {
                 string donationMessage = this.donateMessage.FlexWidth >= 270
-                    ? "If you like AATool and want to support its development, please consider donating! :)"
+                    ? "如果你喜欢AATool这个工具，并且有意愿\n支持他的发展，可以考虑捐赠我们！:)微笑"
                     : "Please consider supporting AATool's development! :)";
                 this.donateMessage.SetText(donationMessage);
             }
