@@ -331,7 +331,7 @@ namespace AATool.Winforms.Controls
             this.remoteGroup.Size = new System.Drawing.Size(417, 214);
             this.remoteGroup.TabIndex = 31;
             this.remoteGroup.TabStop = false;
-            this.remoteGroup.Text = "Remote Minecraft Server Login";
+            this.remoteGroup.Text = "远程Minecraft服务器登录";
             // 
             // sftpValidate
             // 
@@ -340,7 +340,7 @@ namespace AATool.Winforms.Controls
             this.sftpValidate.Name = "sftpValidate";
             this.sftpValidate.Size = new System.Drawing.Size(105, 42);
             this.sftpValidate.TabIndex = 1;
-            this.sftpValidate.Text = "Sync";
+            this.sftpValidate.Text = "同步";
             this.sftpValidate.UseVisualStyleBackColor = true;
             this.sftpValidate.Click += new System.EventHandler(this.OnClicked);
             // 
@@ -353,8 +353,7 @@ namespace AATool.Winforms.Controls
             this.label13.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
             this.label13.Size = new System.Drawing.Size(234, 42);
             this.label13.TabIndex = 71;
-            this.label13.Text = "🛈 If you\'re connecting to a survival server and would like to only see your own " +
-    "advancements, set Player Filtering to \"Solo\"";
+            this.label13.Text = "🛈 如果您要连接到生存服务器并只想查看自己的进度，请将\"玩家筛选\"设置为\"单人\"。";
             // 
             // sftpCompatibility
             // 
@@ -376,7 +375,7 @@ namespace AATool.Winforms.Controls
             this.label7.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
             this.label7.Size = new System.Drawing.Size(114, 15);
             this.label7.TabIndex = 61;
-            this.label7.Text = "🛈 Leave blank for root";
+            this.label7.Text = "🛈 留空表示根目录。";
             // 
             // label5
             // 
@@ -386,7 +385,7 @@ namespace AATool.Winforms.Controls
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(104, 13);
             this.label5.TabIndex = 59;
-            this.label5.Text = "Custom Server Path:";
+            this.label5.Text = "自定义服务器目录：";
             // 
             // sftpRoot
             // 
@@ -413,7 +412,7 @@ namespace AATool.Winforms.Controls
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(29, 13);
             this.label11.TabIndex = 39;
-            this.label11.Text = "Port:";
+            this.label11.Text = "端口：";
             // 
             // toggleCredentials
             // 
@@ -422,7 +421,7 @@ namespace AATool.Winforms.Controls
             this.toggleCredentials.Name = "toggleCredentials";
             this.toggleCredentials.Size = new System.Drawing.Size(80, 22);
             this.toggleCredentials.TabIndex = 55;
-            this.toggleCredentials.Text = "Show Login";
+            this.toggleCredentials.Text = "显示登录内容";
             this.toggleCredentials.UseVisualStyleBackColor = true;
             this.toggleCredentials.Click += new System.EventHandler(this.OnClicked);
             // 
@@ -434,7 +433,7 @@ namespace AATool.Winforms.Controls
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(56, 13);
             this.label4.TabIndex = 30;
-            this.label4.Text = "Password:";
+            this.label4.Text = "密码：";
             // 
             // sftpPass
             // 
@@ -453,7 +452,7 @@ namespace AATool.Winforms.Controls
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(32, 13);
             this.label6.TabIndex = 53;
-            this.label6.Text = "Host:";
+            this.label6.Text = "主机：";
             // 
             // sftpHost
             // 
@@ -670,7 +669,7 @@ namespace AATool.Winforms.Controls
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(134, 13);
             this.label14.TabIndex = 73;
-            this.label14.Text = "Server Autosave (minutes):";
+            this.label14.Text = "服务器自动保存（分钟）：";
             // 
             // label3
             // 
@@ -680,7 +679,7 @@ namespace AATool.Winforms.Controls
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 28;
-            this.label3.Text = "Username:";
+            this.label3.Text = "用户名：";
             // 
             // sftpType
             // 
@@ -703,7 +702,7 @@ namespace AATool.Winforms.Controls
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(68, 13);
             this.label15.TabIndex = 75;
-            this.label15.Text = "Server Type:";
+            this.label15.Text = "服务器类型：";
             // 
             // CTrackerSettings
             // 

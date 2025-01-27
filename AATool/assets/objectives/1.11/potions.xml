@@ -1,35 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <potions>
-    <potion name="Potion of Strength"               icon="potion_strength">
+    <potion name="力量药水"               icon="potion_strength">
         <ingredient id="nether_wart"/>
         <ingredient id="blaze_powder"/>
     </potion>
-    <potion name="Potion of Weakness"               icon="potion_weakness">
+    <potion name="虚弱药水"               icon="potion_weakness">
         <ingredient id="fermented_spider_eye"       icon="fermented_spider_eye_1.12"/>
     </potion>
-    <potion name="Potion of Swiftness"              icon="potion_swiftness">
+    <potion name="迅捷药水"              icon="potion_swiftness">
         <ingredient id="nether_wart"/>
         <ingredient id="sugar"                      icon="sugar_1.12"/>
     </potion>
-    <potion name="Potion of Slowness"               icon="potion_slowness">
+    <potion name="迟缓药水"               icon="potion_slowness">
         <ingredient id="nether_wart"/>
         <ingredient id="sugar"                      icon="sugar_1.12"/>
         <ingredient id="fermented_spider_eye"       icon="fermented_spider_eye_1.12"/>
     </potion>
-    <potion name="Potion of Night Vision"           icon="potion_night_vision">
+    <potion name="夜视药水"           icon="potion_night_vision">
         <ingredient id="nether_wart"/>
         <ingredient id="golden_carrot"              icon="golden_carrot_1.12"/>
     </potion>
-    <potion name="Potion of Invisibility"           icon="potion_invisibility">
+    <potion name="隐身药水"           icon="potion_invisibility">
         <ingredient id="nether_wart"/>
         <ingredient id="golden_carrot"              icon="golden_carrot_1.12"/>
         <ingredient id="fermented_spider_eye"       icon="fermented_spider_eye_1.12"/>
     </potion>
-    <potion name="Potion of Leaping"                icon="potion_leaping">
+    <potion name="跳跃药水"                icon="potion_leaping">
         <ingredient id="nether_wart"/>
         <ingredient id="rabbit_foot"                icon="rabbit_foot_1.12"/>
     </potion>
-    <potion name="Potion of Water Breathing"        icon="potion_water_breathing">
+    <potion name="水肺药水"        icon="potion_water_breathing">
         <ingredient id="nether_wart"/>
         <ingredient id="pufferfish"                 icon="pufferfish_1.12"/>
     </potion>

@@ -76,8 +76,8 @@ namespace AATool.Winforms.Controls
             if (this.ip.UseSystemPasswordChar)
             {
                 //show confirmation dialog
-                string message = "Be careful about showing IP addresses on stream! ♥\nAre you sure you want to unmask the IP address field?";
-                string title   = "IP Reveal Confirmation";
+                string message = "在直播中显示IP地址时要小心！ ♥\n您确定要显示IP地址吗？";
+                string title   = "IP地址显示确认";
                 DialogResult result = MessageBox.Show(this, message, title,
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Warning,
@@ -85,7 +85,7 @@ namespace AATool.Winforms.Controls
                 hide = result is not DialogResult.Yes;
             }
             this.ip.UseSystemPasswordChar = hide;
-            this.toggleIP.Text = hide ? "Show IP Address" : "Hide IP Address";
+            this.toggleIP.Text = hide ? "显示IP地址" : "隐藏IP地址";
         }
 
         private void TogglePassword()
@@ -94,8 +94,8 @@ namespace AATool.Winforms.Controls
             if (this.password.UseSystemPasswordChar)
             {
                 //show confirmation dialog
-                string message = "Be careful about showing passwords on stream! ♥\nAre you sure you want to unmask the password field?";
-                string title   = "Password Reveal Confirmation";
+                string message = "在直播中显示密码时要小心！ ♥\n您确定要显示密码吗？";
+                string title   = "密码显示确认";
                 DialogResult result = MessageBox.Show(this, message, title,
                     MessageBoxButtons.YesNo,
                     MessageBoxIcon.Warning,
@@ -103,7 +103,7 @@ namespace AATool.Winforms.Controls
                 hide = result is not DialogResult.Yes;
             }
             this.password.UseSystemPasswordChar = hide;
-            this.togglePassword.Text = hide ? "Show" : "Hide";
+            this.togglePassword.Text = hide ? "显示" : "隐藏";
         }
 
         private void ToggleState()
@@ -166,7 +166,7 @@ namespace AATool.Winforms.Controls
             if (sender == this.networkType)
             {
                 bool isClient = sender is Control control && control.Text.ToLower() is "client";
-                this.networkSwitch.Text = isClient ? "Connect" : "Host";
+                this.networkSwitch.Text = isClient ? "连接" : "主机";
                 this.autoServerIP.Visible = !isClient;
 
                 if (!isClient && this.autoServerIP.Checked && NetworkHelper.TryGetLocalIPAddress(out IPAddress address))

@@ -169,7 +169,7 @@
             this.tabNetwork.Padding = new System.Windows.Forms.Padding(3);
             this.tabNetwork.Size = new System.Drawing.Size(542, 314);
             this.tabNetwork.TabIndex = 2;
-            this.tabNetwork.Text = "Co-op";
+            this.tabNetwork.Text = "合作";
             this.tabNetwork.UseVisualStyleBackColor = true;
             // 
             // network

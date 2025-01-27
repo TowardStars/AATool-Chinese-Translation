@@ -142,7 +142,7 @@ namespace AATool.UI.Controls
             {
                 string donationMessage = this.donateMessage.FlexWidth >= 270
                     ? "如果你喜欢AATool这个工具，并且有意愿\n支持他的发展，可以考虑捐赠我们！:)微笑"
-                    : "Please consider supporting AATool's development! :)";
+                    : "请考虑支持AATool的发展！:)";
                 this.donateMessage.SetText(donationMessage);
             }
             else

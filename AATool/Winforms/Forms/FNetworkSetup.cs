@@ -59,7 +59,7 @@ namespace AATool.Winforms.Forms
                 this.autoServerIP.Hide();
 
             this.ip.UseSystemPasswordChar = true;
-            this.toggleIP.Text = "Show IP Address";
+            this.toggleIP.Text = "显示IP地址";
             this.UpdateControls();
         }
 
@@ -67,12 +67,12 @@ namespace AATool.Winforms.Forms
         {
             if (this.index < this.pages.Length - 1) 
             {
-                this.next.Text = "Next";
+                this.next.Text = "下一步";
                 if (this.index is 0)
                     this.back.Hide();
             }
             else
-                this.next.Text = "Finish";
+                this.next.Text = "完成";
 
             switch (this.index)
             {
@@ -86,15 +86,13 @@ namespace AATool.Winforms.Forms
                     if (this.client.Checked)
                     {
                         this.autoServerIP.Checked = false;
-                        this.ipLabel.Text = "Enter the IP address of the server to which you're connecting.";
-                        this.portLabel.Text = "This must match the port chosen by the person hosting the server. (default is 25562)";
+                        this.ipLabel.Text = "输入要连接的服务器的 IP 地址。";
+                        this.portLabel.Text = "这必须与托管服务器的人选择的端口匹配。（默认是 25562）";
                     }
                     else
                     {
-                        this.ipLabel.Text = "You may need to change this if you have an odd network configuration, but if you're \"Opening to LAN\" in Minecraft you can leave this on auto. " +
-                            "Your friends need this to connect.";
-                        this.portLabel.Text = "This can almost always be left default (25562). " +
-                            "If you're not playing over Hamachi you may have to port-forward the chosen port on your router. This process varies, but Google is your friend here.";
+                        this.ipLabel.Text = "如果你的网络配置比较特殊，可能需要更改这个设置，但如果你在 Minecraft 中选择了“对局域网开放”，你可以保持默认。你的朋友需要这个来连接。";
+                        this.portLabel.Text = "这个通常可以保持默认（25562）。如果你不是通过Hamachi玩游戏，你可能需要在路由器上进行端口转发。这个过程因路由器不同而有所不同，但Google是你的好朋友（意思是让你自行网上搜索学习如何端口转发）。";
                     }
                     this.next.Enabled = IPAddress.TryParse(this.ip.Text, out _) && int.TryParse(this.port.Text, out _);
                     break;
@@ -178,8 +176,8 @@ namespace AATool.Winforms.Forms
             {
                 if (this.ip.UseSystemPasswordChar)
                 {
-                    string message = "Be careful about showing IP addresses on stream! ♥\nAre you sure you want to reveal this server's IP address?";
-                    DialogResult confirmation = MessageBox.Show(this, message, "IP Reveal Confirmation", 
+                    string message = "在直播中显示IP地址时要小心！ ♥\n您确定要显示IP地址吗？";
+                    DialogResult confirmation = MessageBox.Show(this, message, "IP地址显示确认", 
                         MessageBoxButtons.YesNo, 
                         MessageBoxIcon.Warning, 
                         MessageBoxDefaultButton.Button2);
@@ -187,21 +185,21 @@ namespace AATool.Winforms.Forms
                     if (confirmation == DialogResult.Yes)
                     {
                         this.ip.UseSystemPasswordChar = false;
-                        this.toggleIP.Text = "Hide IP Address";
+                        this.toggleIP.Text = "隐藏IP地址";
                     }
                 }
                 else
                 {
                     this.ip.UseSystemPasswordChar = true;
-                    this.toggleIP.Text = "Show IP Address";
+                    this.toggleIP.Text = "显示IP地址";
                 }
             }
             else if (sender == this.togglePassword)
             {
                 if (this.password.UseSystemPasswordChar)
                 {
-                    string message = "Be careful about showing passwords on stream! ♥\nAre you sure you want to reveal this password?";
-                    DialogResult confirmation = MessageBox.Show(this, message, "IP Reveal Confirmation",
+                    string message = "在直播中显示密码时要小心！ ♥\n您确定要显示密码吗？";
+                    DialogResult confirmation = MessageBox.Show(this, message, "密码显示确认",
                         MessageBoxButtons.YesNo,
                         MessageBoxIcon.Warning,
                         MessageBoxDefaultButton.Button2);
@@ -209,13 +207,13 @@ namespace AATool.Winforms.Forms
                     if (confirmation == DialogResult.Yes)
                     {
                         this.password.UseSystemPasswordChar = false;
-                        this.togglePassword.Text = "Hide Password";
+                        this.togglePassword.Text = "隐藏密码";
                     }
                 }
                 else
                 {
                     this.password.UseSystemPasswordChar = true;
-                    this.togglePassword.Text = "Show Password";
+                    this.togglePassword.Text = "显示密码";
                 }
             }
         }

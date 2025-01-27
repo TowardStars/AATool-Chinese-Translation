@@ -75,7 +75,7 @@ namespace AATool.Winforms.Controls
             this.groupBox4.Size = new System.Drawing.Size(309, 153);
             this.groupBox4.TabIndex = 15;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Control Panel";
+            this.groupBox4.Text = "控制面板";
             // 
             // kick
             // 
@@ -93,7 +93,7 @@ namespace AATool.Winforms.Controls
             this.runSetup.Name = "runSetup";
             this.runSetup.Size = new System.Drawing.Size(98, 45);
             this.runSetup.TabIndex = 10;
-            this.runSetup.Text = "Run Setup Assistant";
+            this.runSetup.Text = "运行配置向导";
             this.runSetup.UseVisualStyleBackColor = true;
             this.runSetup.Click += new System.EventHandler(this.OnClick);
             // 
@@ -117,7 +117,7 @@ namespace AATool.Winforms.Controls
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(99, 13);
             this.label13.TabIndex = 44;
-            this.label13.Text = "Connected Players:";
+            this.label13.Text = "连接的玩家：";
             // 
             // label1
             // 
@@ -127,7 +127,7 @@ namespace AATool.Winforms.Controls
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 13);
             this.label1.TabIndex = 24;
-            this.label1.Text = "Network Type:";
+            this.label1.Text = "网络类型：";
             // 
             // networkType
             // 
@@ -161,7 +161,7 @@ namespace AATool.Winforms.Controls
             this.toggleIP.Name = "toggleIP";
             this.toggleIP.Size = new System.Drawing.Size(98, 22);
             this.toggleIP.TabIndex = 7;
-            this.toggleIP.Text = "Show IP Address";
+            this.toggleIP.Text = "显示IP地址";
             this.toggleIP.UseVisualStyleBackColor = true;
             this.toggleIP.Click += new System.EventHandler(this.OnClick);
             // 
@@ -187,7 +187,7 @@ namespace AATool.Winforms.Controls
             this.groupBox3.Size = new System.Drawing.Size(309, 142);
             this.groupBox3.TabIndex = 14;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Network Configuration";
+            this.groupBox3.Text = "网络配置";
             // 
             // togglePassword
             // 
@@ -196,7 +196,7 @@ namespace AATool.Winforms.Controls
             this.togglePassword.Name = "togglePassword";
             this.togglePassword.Size = new System.Drawing.Size(36, 22);
             this.togglePassword.TabIndex = 49;
-            this.togglePassword.Text = "Show";
+            this.togglePassword.Text = "显示";
             this.togglePassword.UseVisualStyleBackColor = true;
             this.togglePassword.Click += new System.EventHandler(this.OnClick);
             // 
@@ -208,7 +208,7 @@ namespace AATool.Winforms.Controls
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(56, 13);
             this.label4.TabIndex = 48;
-            this.label4.Text = "Password:";
+            this.label4.Text = "密码：";
             // 
             // password
             // 
@@ -227,7 +227,7 @@ namespace AATool.Winforms.Controls
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 13);
             this.label3.TabIndex = 46;
-            this.label3.Text = "Pronouns:";
+            this.label3.Text = "代词：";
             // 
             // pronouns
             // 
@@ -263,7 +263,7 @@ namespace AATool.Winforms.Controls
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 13);
             this.label2.TabIndex = 44;
-            this.label2.Text = "Display Name:";
+            this.label2.Text = "显示名称：";
             // 
             // autoServerIP
             // 
@@ -272,7 +272,7 @@ namespace AATool.Winforms.Controls
             this.autoServerIP.Name = "autoServerIP";
             this.autoServerIP.Size = new System.Drawing.Size(166, 17);
             this.autoServerIP.TabIndex = 6;
-            this.autoServerIP.Text = "Auto-detect local IP for server";
+            this.autoServerIP.Text = "自动检测服务器的本地IP地址";
             this.autoServerIP.UseVisualStyleBackColor = true;
             this.autoServerIP.CheckedChanged += new System.EventHandler(this.OnCheckChanged);
             // 
@@ -292,7 +292,7 @@ namespace AATool.Winforms.Controls
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(76, 13);
             this.label12.TabIndex = 36;
-            this.label12.Text = "Mojang Name:";
+            this.label12.Text = "游戏名称：";
             // 
             // port
             // 
@@ -310,7 +310,7 @@ namespace AATool.Winforms.Controls
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(61, 13);
             this.label6.TabIndex = 34;
-            this.label6.Text = "IP Address:";
+            this.label6.Text = "IP地址：";
             // 
             // label11
             // 
@@ -320,7 +320,7 @@ namespace AATool.Winforms.Controls
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(29, 13);
             this.label11.TabIndex = 37;
-            this.label11.Text = "Port:";
+            this.label11.Text = "端口：";
             // 
             // ip
             // 

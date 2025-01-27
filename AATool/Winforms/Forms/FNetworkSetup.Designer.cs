@@ -75,7 +75,7 @@ namespace AATool.Winforms.Forms
             this.next.Name = "next";
             this.next.Size = new System.Drawing.Size(100, 30);
             this.next.TabIndex = 2;
-            this.next.Text = "Next";
+            this.next.Text = "下一步";
             this.next.UseVisualStyleBackColor = true;
             this.next.Click += new System.EventHandler(this.OnClick);
             // 
@@ -85,7 +85,7 @@ namespace AATool.Winforms.Forms
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(100, 30);
             this.back.TabIndex = 3;
-            this.back.Text = "Back";
+            this.back.Text = "上一步";
             this.back.UseVisualStyleBackColor = true;
             this.back.Click += new System.EventHandler(this.OnClick);
             // 
@@ -96,7 +96,7 @@ namespace AATool.Winforms.Forms
             this.title.Name = "title";
             this.title.Size = new System.Drawing.Size(460, 29);
             this.title.TabIndex = 4;
-            this.title.Text = "Title";
+            this.title.Text = "标题";
             this.title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // mojangName
@@ -140,7 +140,7 @@ namespace AATool.Winforms.Forms
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(150, 13);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Minecraft Name";
+            this.label2.Text = "游戏名称";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label3
@@ -150,8 +150,7 @@ namespace AATool.Winforms.Forms
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(150, 92);
             this.label3.TabIndex = 5;
-            this.label3.Text = "This is your actual Minecraft username. Used to sync your progress and to display" +
-    " your skin. Not case sensitive, but otherwise must be typed exactly.";
+            this.label3.Text = "这是你实际的 Minecraft 用户名。用于同步你的进度和显示你的皮肤。不区分大小写，但其他方面必须完全输入正确。";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // page0
@@ -170,7 +169,7 @@ namespace AATool.Winforms.Forms
             this.page0.Size = new System.Drawing.Size(460, 192);
             this.page0.TabIndex = 8;
             this.page0.TabStop = false;
-            this.page0.Tag = "Who are you?";
+            this.page0.Tag = "你是谁？";
             // 
             // face
             // 
@@ -188,7 +187,7 @@ namespace AATool.Winforms.Forms
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(82, 13);
             this.label5.TabIndex = 8;
-            this.label5.Text = "Your Pronouns";
+            this.label5.Text = "你的代词";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label4
@@ -198,8 +197,7 @@ namespace AATool.Winforms.Forms
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(150, 68);
             this.label4.TabIndex = 7;
-            this.label4.Text = "This is optional, and allows you to use a name that\'s different from your Minecra" +
-    "ft user name. Great for removing unwanted number suffixes.";
+            this.label4.Text = "这是可选的，允许您使用与您的 Minecraft 用户名不同的名称。非常适合删除不需要的数字后缀。";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label1
@@ -209,7 +207,7 @@ namespace AATool.Winforms.Forms
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(150, 13);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Display Name";
+            this.label1.Text = "显示名称";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // page1
@@ -223,7 +221,7 @@ namespace AATool.Winforms.Forms
             this.page1.Size = new System.Drawing.Size(460, 192);
             this.page1.TabIndex = 9;
             this.page1.TabStop = false;
-            this.page1.Tag = "What\'s your network configuration?";
+            this.page1.Tag = "您的网络配置是什么？";
             // 
             // server
             // 
@@ -234,7 +232,7 @@ namespace AATool.Winforms.Forms
             this.server.Size = new System.Drawing.Size(150, 50);
             this.server.TabIndex = 9;
             this.server.TabStop = true;
-            this.server.Text = "I\'m Hosting the Server";
+            this.server.Text = "我正在托管服务器";
             this.server.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.server.UseVisualStyleBackColor = true;
             this.server.CheckedChanged += new System.EventHandler(this.OnCheckedChanged);
@@ -248,7 +246,7 @@ namespace AATool.Winforms.Forms
             this.client.Size = new System.Drawing.Size(150, 50);
             this.client.TabIndex = 8;
             this.client.TabStop = true;
-            this.client.Text = "I\'m Joining the Server";
+            this.client.Text = "我正在加入服务器";
             this.client.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.client.UseVisualStyleBackColor = true;
             this.client.CheckedChanged += new System.EventHandler(this.OnCheckedChanged);
@@ -260,7 +258,7 @@ namespace AATool.Winforms.Forms
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(150, 46);
             this.label7.TabIndex = 7;
-            this.label7.Text = "Choose this if you\'re the one clicking \"Open to LAN\" in Minecraft.";
+            this.label7.Text = "如果你是在 Minecraft 中点击“对局域网开放”的人，请选择这个。";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label6
@@ -270,7 +268,7 @@ namespace AATool.Winforms.Forms
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(150, 46);
             this.label6.TabIndex = 6;
-            this.label6.Text = "Choose this if you\'re going to be connecting to your friend\'s Minecraft server.";
+            this.label6.Text = "如果您要连接到朋友的 Minecraft 服务器，请选择此选项。";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // page2
@@ -288,7 +286,7 @@ namespace AATool.Winforms.Forms
             this.page2.Size = new System.Drawing.Size(460, 192);
             this.page2.TabIndex = 10;
             this.page2.TabStop = false;
-            this.page2.Tag = "What\'s your network configuration?";
+            this.page2.Tag = "您的网络配置是什么？";
             // 
             // toggleIP
             // 
@@ -296,7 +294,7 @@ namespace AATool.Winforms.Forms
             this.toggleIP.Name = "toggleIP";
             this.toggleIP.Size = new System.Drawing.Size(150, 23);
             this.toggleIP.TabIndex = 44;
-            this.toggleIP.Text = "Show IP Address";
+            this.toggleIP.Text = "显示IP地址";
             this.toggleIP.UseVisualStyleBackColor = true;
             this.toggleIP.Click += new System.EventHandler(this.OnClick);
             // 
@@ -307,7 +305,7 @@ namespace AATool.Winforms.Forms
             this.autoServerIP.Name = "autoServerIP";
             this.autoServerIP.Size = new System.Drawing.Size(48, 17);
             this.autoServerIP.TabIndex = 43;
-            this.autoServerIP.Text = "Auto";
+            this.autoServerIP.Text = "自动";
             this.autoServerIP.UseVisualStyleBackColor = true;
             this.autoServerIP.CheckedChanged += new System.EventHandler(this.OnCheckedChanged);
             // 
@@ -328,7 +326,7 @@ namespace AATool.Winforms.Forms
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(150, 13);
             this.label9.TabIndex = 12;
-            this.label9.Text = "Port";
+            this.label9.Text = "端口";
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // ipLabel
@@ -338,7 +336,7 @@ namespace AATool.Winforms.Forms
             this.ipLabel.Name = "ipLabel";
             this.ipLabel.Size = new System.Drawing.Size(150, 96);
             this.ipLabel.TabIndex = 11;
-            this.ipLabel.Text = "IP Label";
+            this.ipLabel.Text = "IP标签";
             this.ipLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label11
@@ -348,7 +346,7 @@ namespace AATool.Winforms.Forms
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(150, 13);
             this.label11.TabIndex = 10;
-            this.label11.Text = "IP Address";
+            this.label11.Text = "IP地址";
             this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // ip
@@ -388,7 +386,7 @@ namespace AATool.Winforms.Forms
             this.page3.Size = new System.Drawing.Size(460, 192);
             this.page3.TabIndex = 11;
             this.page3.TabStop = false;
-            this.page3.Tag = "What\'s your network configuration?";
+            this.page3.Tag = "您的网络配置是什么？";
             // 
             // togglePassword
             // 
@@ -396,7 +394,7 @@ namespace AATool.Winforms.Forms
             this.togglePassword.Name = "togglePassword";
             this.togglePassword.Size = new System.Drawing.Size(150, 23);
             this.togglePassword.TabIndex = 50;
-            this.togglePassword.Text = "Show Password";
+            this.togglePassword.Text = "显示密码";
             this.togglePassword.UseVisualStyleBackColor = true;
             this.togglePassword.Click += new System.EventHandler(this.OnClick);
             // 
@@ -407,7 +405,7 @@ namespace AATool.Winforms.Forms
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(150, 13);
             this.label8.TabIndex = 49;
-            this.label8.Text = "Password";
+            this.label8.Text = "密码";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // password
@@ -435,7 +433,7 @@ namespace AATool.Winforms.Forms
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FNetworkSetup";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Co-op Setup Assistant";
+            this.Text = "合作模式配置向导";
             this.page0.ResumeLayout(false);
             this.page0.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.face)).EndInit();

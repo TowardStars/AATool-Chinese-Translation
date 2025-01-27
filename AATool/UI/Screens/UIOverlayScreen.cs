@@ -65,7 +65,7 @@ namespace AATool.UI.Screens
         public UIOverlayScreen(Main main) : base(main, GameWindow.Create(main, 360, 360))
         {
             //initialize window
-            this.Form.Text         = "Stream Overlay";
+            this.Form.Text         = "直播覆盖";
             this.Form.ControlBox   = false;
             this.Form.ResizeBegin += this.OnResizeBegin;
             this.Form.ResizeEnd   += this.OnResizeEnd;

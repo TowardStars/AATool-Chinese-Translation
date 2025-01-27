@@ -20,11 +20,11 @@ namespace AATool.Exceptions
             if (Config.Tracking.Source == TrackerSource.ActiveInstance)
             {
                 return ActiveInstance.HasNumber
-                    ? $"Instance {ActiveInstance.Number} saves folder doesn't exist"
-                    : "Active instance missing saves folder";
+                    ? $"实例 {ActiveInstance.Number} 存档文件夹并不存在"
+                    : "活动实例缺少存档文件夹";
             }
 
-            return "Custom saves path doesn't exist";
+            return "自定义世界路径并不存在";
         }
     }
 }

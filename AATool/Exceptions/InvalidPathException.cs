@@ -8,7 +8,7 @@ namespace AATool.Exceptions
     [Serializable]
     public class InvalidPathException : ArgumentException
     {
-        public InvalidPathException() : base($"Illegal character(s) in custom save path")
+        public InvalidPathException() : base($"自定义存档路径中存在非法字符")
         {
 
         }

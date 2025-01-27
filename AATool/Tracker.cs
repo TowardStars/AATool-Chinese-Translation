@@ -84,8 +84,8 @@ namespace AATool
         public static string GetEstimateString(int seconds)
         {
             return seconds >= 60
-                ? $"{seconds / 60} min & {seconds % 60} sec"
-                : $"{seconds} seconds";
+                ? $"{seconds / 60} 分 & {seconds % 60} 秒"
+                : $"{seconds} 秒";
         }
 
         public static string GetLastRefresh(Time time)
@@ -94,9 +94,9 @@ namespace AATool
             if (seconds < 1)
                 return "Refreshing Now";
             else if (seconds == 1)
-                return $"Refreshed 1 second ago";
+                return $"1 秒 前更新";
             else
-                return $"Refreshed {GetEstimateString(seconds).Replace("& ", "")} ago";
+                return $"{GetEstimateString(seconds).Replace("& ", "")} 前更新";
         }
 
         private static readonly FileSystemWatcher WorldWatcher = new ();
@@ -374,7 +374,7 @@ namespace AATool
                     if (string.IsNullOrEmpty(worldPath))
                     {
                         if (LastError is not ArgumentException || Config.Tracking.SourceChanged)
-                            throw new ArgumentException("User-specified world path empty");
+                            throw new ArgumentException("追踪特定世界的路径是空的");
                         return;
                     }
 
@@ -412,8 +412,8 @@ namespace AATool
                         if (LastError is not ArgumentException || Config.Tracking.SourceChanged)
                         {
                             throw Source is TrackerSource.ActiveInstance
-                                ? new ArgumentException("Tab into Minecraft to start tracking")
-                                : new ArgumentException("Custom saves path is empty");
+                                ? new ArgumentException("进入 Minecraft 开始跟踪")
+                                : new ArgumentException("自定义存档文件夹是空的");
                         }
                         return;
                     }

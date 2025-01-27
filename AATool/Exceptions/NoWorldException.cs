@@ -18,8 +18,8 @@ namespace AATool.Exceptions
             if (Config.Tracking.Source == TrackerSource.ActiveInstance)
             {
                 return ActiveInstance.HasNumber
-                    ? $"No worlds in instance {ActiveInstance.Number}"
-                    : "No worlds in active instance";
+                    ? $"该实例下没有世界 {ActiveInstance.Number}"
+                    : "当前活动的实例中没有世界";
             }
 
             if (Config.Tracking.Source == TrackerSource.SpecificWorld)
@@ -27,14 +27,14 @@ namespace AATool.Exceptions
                 try
                 {
                     string name = new DirectoryInfo(Config.Tracking.CustomWorldPath).Name;
-                    return $"Specified world \"{name}\" doesn't exist";
+                    return $"指定的世界 \"{name}\" 并不存在";
                 }
                 catch
                 {
-                    return $"Specified world invalid";
+                    return $"指定的世界无效";
                 }
             }
-            return "No worlds in custom save path";
+            return "自定义存档文件夹路径下没有世界";
         }
     }
 }
