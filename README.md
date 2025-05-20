@@ -1,4 +1,4 @@
-## AATool 非官方汉化版
+## AATool 1.7.5.0 非官方汉化版
 
 **作者：** TowardStars  
 **原项目地址：** [DarwinBaker/AATool](https://github.com/DarwinBaker/AATool)
