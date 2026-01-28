@@ -9,6 +9,7 @@ using AATool.Data.Progress;
 using AATool.Exceptions;
 using AATool.Net;
 using AATool.Saves;
+using AATool.UI.Controllers;
 using AATool.Utilities;
 
 namespace AATool
@@ -33,8 +34,11 @@ namespace AATool
         public static bool Invalidated =>
             SavesFolderChanged || ObjectivesChanged || ProgressChanged;
 
+        public static bool ManualChecklistInvalidated { get; set; }
+        public static bool ManualChecklistChanged { get; set; }
+
         public static bool SavesFolderChanged => 
-            PreviousSavesPath != Paths.Saves.CurrentFolder();
+            !Config.Tracking.ManualChecklistMode && (PreviousSavesPath != Paths.Saves.CurrentFolder());
 
         public static bool WorldChanged => World.PathChanged;
 
@@ -106,6 +110,7 @@ namespace AATool
 
         private static WorldFolder World;
         private static Timer RefreshTimer;
+        private static Timer FilesystemEventDebounce;
         private static TimeSpan LastInGameTime;
         private static Uuid PreviousMainPlayer;
         private static string PreviousSavesPath;
@@ -186,6 +191,9 @@ namespace AATool
             State = new WorldState();
             RefreshTimer = new Timer();
 
+            FilesystemEventDebounce = new(0.5f);
+            FilesystemEventDebounce.Expire();
+
             WorldWatcher.Created += FileSystemChanged;
             WorldWatcher.Deleted += FileSystemChanged;
             WorldWatcher.Changed += FileSystemChanged;
@@ -224,12 +232,19 @@ namespace AATool
             {
                 return $"Hosting: \"{WorldName}\"";
             }
-            else if (IsWorking)
+
+            if (Config.Tracking.ManualChecklistMode)
+            {
+                return "Manual Mode: Click items to mark as complete";
+            }
+
+            if (IsWorking)
             {
                 return Source is TrackerSource.ActiveInstance && ActiveInstance.HasNumber
                     ? $"实例 {ActiveInstance.Number}: \"{WorldName}\""
                     : $"追踪: \"{WorldName}\"";
             }
+            
             return LastError.Message;
         }
         
@@ -301,6 +316,7 @@ namespace AATool
             DesignationsChanged = false;
             MainPlayerChanged = false;
             CoOpStateChanged = false;
+            ManualChecklistChanged = false;
             World.ClearFlags();
         }
 
@@ -311,9 +327,23 @@ namespace AATool
             {
                 ParseCoOpProgress(time, client);
             }
+            else if (Config.Tracking.ManualChecklistMode && Category is AllAdvancements)
+            {
+                bool needsRefresh = FileSystemEventRaised
+                    || ManualChecklistInvalidated
+                    || ObjectivesChanged
+                    || Config.Tracking.SourceChanged;
+
+                if (needsRefresh)
+                {
+                    ReadManualChecklist(time);
+                    ManualChecklistChanged = true;
+                    ManualChecklistInvalidated = false;
+                }
+            }
             else
             {
-                bool needsRefresh = FileSystemEventRaised 
+                bool needsRefresh = (FileSystemEventRaised && FilesystemEventDebounce.IsExpired)
                     || ObjectivesChanged 
                     || Config.Tracking.SourceChanged
                     || (ActiveInstance.Watching && PreviousActiveId != ActiveInstance.LastActiveId);
@@ -322,12 +352,14 @@ namespace AATool
                 {
                     UpdateCurrentWorld();
                     ReadLocalFiles(time);
+                    FilesystemEventDebounce.Reset();
                 }
                 PreviousActiveId = ActiveInstance.LastActiveId;
                 UpdateFileSystemWatchers();
             }
             Category.Update();
             ComplexObjectives.UpdateDynamicIcons(time);
+            FilesystemEventDebounce.Update(time);
         }
 
         private static void UpdateFileSystemWatchers()
@@ -567,7 +599,7 @@ namespace AATool
             ReadLatestLog();
 
             //update progress if source has been invalidated
-            if (World.TryRefresh() || Peer.StateChanged || Config.Tracking.FilterChanged)
+            if (World.TryRefresh() || Peer.StateChanged || Config.Tracking.FilterChanged || Config.Tracking.ManualChecklistMode.Changed)
             {
                 LastServerMessage = null;
                 State = World.GetState();
@@ -579,6 +611,17 @@ namespace AATool
 
                 LastRefresh = time.TotalSeconds;
             }
+        }
+        
+        private static void ReadManualChecklist(Time time)
+        {
+            //reload objective manifests if game version has changed
+            if (ObjectivesChanged)
+                Category.LoadObjectives();
+
+            //update progress if source has been invalidated
+            State = ManualChecklistController.GetCurrentState();
+            SetState(State);
         }
 
         private static void ReadLatestLog()

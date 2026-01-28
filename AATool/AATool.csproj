@@ -249,6 +249,7 @@
     <Compile Include="UI\Badges\RankBadge.cs" />
     <Compile Include="UI\Badges\HundredThousandBadge.cs" />
     <Compile Include="UI\Badges\HalfHeartHardcoreBadge.cs" />
+    <Compile Include="UI\Controllers\ManualChecklistController.cs" />
     <Compile Include="UI\Controls\UIArmorTrimCriterion.cs" />
     <Compile Include="UI\Controls\UICommunityTabs.cs" />
     <Compile Include="UI\Controls\UICoordinateGrid.cs" />
@@ -305,6 +306,7 @@
     <Compile Include="UI\Controls\UIPlayer.cs" />
     <Compile Include="UI\Controls\UIRunComplete.cs" />
     <Compile Include="UI\Controls\UIRecordGraph.cs" />
+    <Compile Include="UI\Interfaces\ICheckableControl.cs" />
     <Compile Include="UI\Screens\UIUpdateScreen.cs" />
     <Compile Include="Utilities\ActiveInstance.cs" />
     <Compile Include="Utilities\ColorHelper.cs" />
@@ -547,6 +549,30 @@
     <Content Include="assets\objectives\1.19\potions.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="assets\objectives\1.21.6\advancements\adventure.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\objectives\1.21.6\advancements\end.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\objectives\1.21.6\advancements\husbandry.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\objectives\1.21.6\advancements\minecraft.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\objectives\1.21.6\advancements\nether.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\objectives\1.21.6\blocks.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\objectives\1.21.6\potions.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\objectives\1.21.6\trims.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="assets\objectives\1.21\advancements\adventure.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -620,6 +646,36 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="assets\sprites\ab_guide\spawners_and_vaults%243x3x30.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\sprites\global\advancements\adventure\heart_transplanter^32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\sprites\global\advancements\adventure\heart_transplanter^16.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\sprites\global\advancements\adventure\heart_transplanter^48.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\sprites\global\advancements\adventure\stay_hydrated^16.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\sprites\global\advancements\adventure\stay_hydrated^32.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\sprites\global\advancements\adventure\stay_hydrated^48.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\sprites\global\criteria\biomes\pale_garden.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\sprites\global\criteria\mobs\creaking.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\sprites\global\gui\icons\clear_manual_checklist.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\sprites\global\items\lectern_status.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="assets\sprites\global\items\vault.png">
@@ -7727,6 +7783,15 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="assets\views\all_advancements\1.19\main_optimized.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\views\all_advancements\1.21.6\main_compact.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\views\all_advancements\1.21.6\main_optimized.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\views\all_advancements\1.21.6\main_relaxed.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="assets\views\all_advancements\1.21\main_compact.xml">

@@ -45,15 +45,12 @@ namespace AATool.Net.Requests
 
         public override async Task<bool> DownloadAsync()
         {
-            using var client = new HttpClient() { 
-                Timeout = TimeSpan.FromMilliseconds(Protocol.Requests.TimeoutNormalMs)
-            };
             try
             {
                 //get latest update information from github
-                string latestXml = await client.GetStringAsync(PatchNotesUrl);
+                string latestXml = await Client.GetStringAsync(PatchNotesUrl);
 
-                using (Stream imageStream = await client.GetStreamAsync(ThumbnailUrl))
+                using (Stream imageStream = await Client.GetStreamAsync(ThumbnailUrl))
                     LatestThumb = Texture2D.FromStream(Main.GraphicsManager.GraphicsDevice, imageStream);
 
                 return this.HandleResponse(latestXml);  

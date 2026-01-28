@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using System.Xml;
+using AATool.Configuration;
 using AATool.Net;
 using AATool.Utilities;
 
@@ -16,7 +17,8 @@ namespace AATool.Data.Objectives
 
         public virtual bool CompletedByDesignated() => this.CompletedBy(this.DesignatedPlayer);
 
-        public override bool IsComplete() => this.CompletedByDesignated();
+        public override bool IsComplete() => this.CompletedByDesignated() 
+            || (Config.Tracking.ManualChecklistMode && this.CompletedByAnyone);
 
         public override string FullStatus => this.Name;
         public override string TinyStatus => this.ShortName;

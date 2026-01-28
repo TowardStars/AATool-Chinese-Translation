@@ -42,13 +42,10 @@ namespace AATool.Net.Requests
             Downloads++;
             this.BeginTiming();
 
-            using var client = new HttpClient() {
-                Timeout = TimeSpan.FromMilliseconds(Protocol.Requests.TimeoutNormalMs)
-            };
             try
             {
                 //download texture and add to atlas
-                using (Stream response = await client.GetStreamAsync(this.Url))
+                using (Stream response = await Client.GetStreamAsync(this.Url))
                 {
                     this.EndTiming();
                     return this.HandleResponse(response);

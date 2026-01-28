@@ -81,6 +81,8 @@ namespace AATool.Configuration
             [JsonProperty] public readonly Setting<int> StartupDisplay = new (1);
             [JsonProperty] public readonly Setting<bool> AlwaysOnTop = new (false);
 
+            [JsonProperty] public readonly Setting<bool> RenameToNotchApple = new (false);
+
             //deprecated (now used to migrate preference from pre-1.4.5.0)
             [JsonProperty] public readonly Setting<bool> CompactMode = new (false);
 
@@ -152,6 +154,7 @@ namespace AATool.Configuration
                 this.RegisterSetting(this.StartupDisplay);
                 this.RegisterSetting(this.LastWindowPosition);
                 this.RegisterSetting(this.AlwaysOnTop);
+                this.RegisterSetting(this.RenameToNotchApple);
             }
 
             public void SetPrideList(string csv)

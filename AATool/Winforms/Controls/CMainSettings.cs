@@ -45,6 +45,7 @@ namespace AATool.Winforms.Controls
             this.borderColor.BackColor  = ColorHelper.ToDrawing(Config.Main.BorderColor);
             this.notesEnabled.Checked   = Config.Notes.Enabled;
             this.alwaysOnTop.Checked    = Config.Main.AlwaysOnTop;
+            this.notchApple.Checked     = Config.Main.RenameToNotchApple;
 
             this.startupPosition.Text = Config.Main.StartupArrangement.Value.ToString();
             this.UpdateMonitorList();
@@ -93,6 +94,7 @@ namespace AATool.Winforms.Controls
                 Config.Main.TextColor.Set(ColorHelper.ToXNA(this.textColor.BackColor));
                 Config.Main.BorderColor.Set(ColorHelper.ToXNA(this.borderColor.BackColor));
                 Config.Main.AlwaysOnTop.Set(this.alwaysOnTop.Checked);
+                Config.Main.RenameToNotchApple.Set(this.notchApple.Checked);
 
                 Config.Main.StartupDisplay.Set(this.startupMonitor.SelectedIndex + 1);
                 if (Enum.TryParse(this.startupPosition.Text, out WindowSnap position))

@@ -22,6 +22,7 @@ namespace AATool.Data.Objectives.Complex
         private const string LegacyBeaconator = "achievement.fullBeacon";
 
         private static readonly Version BlockIdChanged = new ("1.13");
+        private static readonly Version WitherKillRequired = new ("1.16");
 
         private static bool UseModernId => !Version.TryParse(Tracker.CurrentVersion, out Version current)
             || current >= BlockIdChanged;
@@ -72,7 +73,7 @@ namespace AATool.Data.Objectives.Complex
             }
             else
             {
-                this.Partial = !this.witherKilled;
+                this.Partial = !this.witherKilled && Version.Parse(Tracker.CurrentVersion) >= WitherKillRequired;
                 this.CompletionOverride = this.EstimatedObtained >= this.Required
                     || this.witherSummoned || this.fullBeaconComplete || this.witherKilled;
             }

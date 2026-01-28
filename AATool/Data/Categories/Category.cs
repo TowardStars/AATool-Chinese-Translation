@@ -59,7 +59,9 @@ namespace AATool.Data.Categories
                 }
                 else
                 {
-                    version = $"{number.Major}.{number.Minor}";
+                    version = number.Build > 0
+                        ? $"{number.Major}.{number.Minor}.{number.Build}"
+                        : $"{number.Major}.{number.Minor}";
                 }
             }
 

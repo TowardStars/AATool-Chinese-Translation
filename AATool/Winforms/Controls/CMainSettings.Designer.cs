@@ -72,6 +72,7 @@ namespace AATool.Winforms.Controls
             this.label6 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.notchApple = new System.Windows.Forms.CheckBox();
             this.mainGroupMain.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -396,6 +397,7 @@ namespace AATool.Winforms.Controls
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.notchApple);
             this.groupBox1.Controls.Add(this.labelBadgeAvailability);
             this.groupBox1.Controls.Add(this.label18);
             this.groupBox1.Controls.Add(this.ambientGlow);
@@ -595,6 +597,18 @@ namespace AATool.Winforms.Controls
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "启动设置";
             // 
+            // notchApple
+            // 
+            this.notchApple.AutoSize = true;
+            this.notchApple.Location = new System.Drawing.Point(9, 190);
+            this.notchApple.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
+            this.notchApple.Name = "notchApple";
+            this.notchApple.Size = new System.Drawing.Size(85, 17);
+            this.notchApple.TabIndex = 49;
+            this.notchApple.Text = "Notch Apple";
+            this.notchApple.UseVisualStyleBackColor = true;
+            this.notchApple.CheckedChanged += new System.EventHandler(this.OnCheckChanged);
+            // 
             // CMainSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -659,5 +673,6 @@ namespace AATool.Winforms.Controls
         private System.Windows.Forms.Label labelBadgeAvailability;
         private System.Windows.Forms.Button configureAutoSwitch;
         private System.Windows.Forms.CheckBox alwaysOnTop;
+        private System.Windows.Forms.CheckBox notchApple;
     }
 }

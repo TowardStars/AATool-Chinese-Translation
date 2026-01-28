@@ -45,7 +45,7 @@ namespace AATool.UI.Controls
             {
                 mostRecordsList += Leaderboard.ListOfMostConcurrentRecords[i].GameVersion;
                 if (i < Leaderboard.ListOfMostConcurrentRecords.Count - 1)
-                    mostRecordsList += ", ";
+                    mostRecordsList += i == 4 ? ",\n" : ", ";
             }
             this.Runner.SetText(Leaderboard.RunnerWithMostConcurrentRecords);
             this.Details.SetText(mostRecordsList);

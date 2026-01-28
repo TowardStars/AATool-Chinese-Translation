@@ -1,4 +1,5 @@
-﻿using AATool.Data.Objectives.Complex;
+﻿using AATool.Configuration;
+using AATool.Data.Objectives.Complex;
 using AATool.Data.Progress;
 using AATool.Net;
 using AATool.Utilities;
@@ -53,8 +54,18 @@ namespace AATool.Data.Objectives
         public bool Contains(string criterion) =>
             this.All.ContainsKey(criterion);
 
-        public int NumberCompletedBy(Uuid player) =>
-            this.Progress.TryGetValue(player, out int completed) ? completed : 0;
+        public int NumberCompletedBy(Uuid player)
+        {
+            if (Config.Tracking.ManualChecklistMode)
+            {
+                return this.Progress.FirstOrDefault().Value;
+            }
+            else
+            {
+                return this.Progress.TryGetValue(player, out int completed) ? completed : 0;
+            }
+        }
+            
 
         public int PercentCompletedBy(Uuid player)
         {

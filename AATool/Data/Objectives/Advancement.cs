@@ -23,6 +23,9 @@ namespace AATool.Data.Objectives
 
         public bool HasCriteria => this.Criteria.Any;
 
+        public override bool IsComplete() => base.IsComplete() ||
+            (Config.Tracking.ManualChecklistMode && this.HasCriteria && this.Criteria.NumberCompletedBy(Uuid.Empty) >= this.Criteria.Count);
+
         public Advancement(XmlNode node) : base(node)
         {
             this.Criteria = new CriteriaSet(node?.SelectSingleNode("criteria"), this);

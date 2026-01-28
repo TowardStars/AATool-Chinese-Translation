@@ -30,13 +30,10 @@ namespace AATool.Net.Requests
             this.BeginTiming();
             Downloads++;
 
-            using var client = new HttpClient() { 
-                Timeout = TimeSpan.FromMilliseconds(Protocol.Requests.TimeoutNormalMs) 
-            };
             try
             {
                 //download leaderboard spreadsheet as csv string
-                string response = await client.GetStringAsync(this.Url);
+                string response = await Client.GetStringAsync(this.Url);
                 this.EndTiming();
                 if (this.HandleResponse(response))
                 {

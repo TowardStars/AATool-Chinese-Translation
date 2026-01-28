@@ -14,6 +14,7 @@ using AATool.Graphics;
 using AATool.Net;
 using AATool.Net.Requests;
 using AATool.UI.Badges;
+using AATool.UI.Controllers;
 using AATool.UI.Controls;
 using AATool.Utilities;
 using AATool.Winforms.Forms;
@@ -54,6 +55,8 @@ namespace AATool.UI.Screens
 
         private static readonly Utilities.Timer SettingsCooldown = new (0.25f);
 
+        public readonly ManualChecklistController checklist;
+
         private UIGrid grid;
         private UILobby lobby;
         private UIStatusBar status;
@@ -90,6 +93,7 @@ namespace AATool.UI.Screens
             this.Form.Text = Main.FullTitle;
             this.Form.FormClosing += this.OnClosing;
             this.Form.TopMost = Config.Main.AlwaysOnTop;
+            this.checklist = new(this);
         }
 
         public void RegisterLabelTint(UIPicture control)
@@ -196,7 +200,9 @@ namespace AATool.UI.Screens
                 this.SetIcon(Tracker.Category.ViewName);
                 foreach (UIPicture picture in this.labelTintedIcons)
                     picture.SetTint(Config.Main.TextColor);
-                //this.Positioned = false;
+                this.checklist.Load();
+                this.checklist.Invalidate();
+                // this.Positioned = false;
             }
             else
             {
@@ -306,6 +312,17 @@ namespace AATool.UI.Screens
             }
             this.UpdateLog();
 
+            if (Config.Tracking.ManualChecklistMode)
+            {
+                this.checklist.Update(time);
+            }
+
+            if (Config.Main.RenameToNotchApple.Changed 
+                && Tracker.ComplexObjectives.TryGet(nameof(EGap), out ComplexObjective objective))
+            {
+                (objective as EGap).RefreshStatus();
+            }
+
             //enforce window size
             this.ConstrainWindow();
         }
@@ -370,7 +387,9 @@ namespace AATool.UI.Screens
             else if (sender.Name is "manual_check")
             {
                 string id = sender.Tag?.ToString() ?? string.Empty;
-                if (Tracker.TryGetComplexObjective(id, out ComplexObjective pickup))
+                if (Tracker.TryGetAdvancement(id, out Advancement advancement))
+                    this.checklist.Toggle(advancement.Id);
+                else if (Tracker.TryGetComplexObjective(id, out ComplexObjective pickup))
                     pickup.ToggleManualCheck();
                 else if (Tracker.TryGetBlock(id, out Block block))
                     block.ToggleManualCheck();
@@ -613,6 +632,9 @@ namespace AATool.UI.Screens
                 Config.Main.TextColor.Set(Color.Black);
             }
 
+            if (Config.Tracking.ManualChecklistMode)
+                this.checklist.Draw(canvas);
+            
             if (Invalidated && Config.Main.CacheDebugMode)
                 canvas.DrawRectangle(this.Bounds, ColorHelper.Fade(Color.Magenta, 0.5f), null, 0, Layer.Fore);
         }

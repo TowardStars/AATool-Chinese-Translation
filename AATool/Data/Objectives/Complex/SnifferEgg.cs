@@ -7,7 +7,7 @@ namespace AATool.Data.Objectives.Complex
     {
         public const string ItemId = "minecraft:sniffer_egg";
 
-        public SnifferEgg() : base(ItemId, "Eggs", 3)
+        public SnifferEgg() : base(ItemId, "Eggs", 2)
         {
             this.Icon = "obtain_sniffer_egg";
         }

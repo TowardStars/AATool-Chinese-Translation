@@ -1,13 +1,14 @@
 ﻿using System.Xml;
 using AATool.Configuration;
 using AATool.Data.Objectives;
+using AATool.UI.Interfaces;
 using AATool.UI.Screens;
 using Microsoft.Xna.Framework;
 using static AATool.Configuration.Config;
 
 namespace AATool.UI.Controls
 {
-    class UICriterion : UIObjectiveControl
+    class UICriterion : UIObjectiveControl, ICheckableControl
     {
         public bool IsStatic        { get; set; }
 
@@ -23,6 +24,9 @@ namespace AATool.UI.Controls
         private float textTarget;
 
         public bool HideFromOverlay => this.Objective is Criterion crit && (crit.Owner.IsComplete() || crit.CompletedByDesignated());
+        public bool IsChecked { get => this.Objective.ManuallyChecked; set => this.Objective.ManuallyChecked = value; }
+        public Rectangle ManualCheckBounds => this.icon.Bounds;
+        public string Key => this.ObjectiveOwnerId + this.Objective.Id;
 
         public UICriterion() : base()
         {

@@ -25,12 +25,9 @@ namespace AATool.Net.Requests
             Downloads++;
             this.BeginTiming();
 
-            using var client = new HttpClient() {
-                Timeout = TimeSpan.FromMilliseconds(Protocol.Requests.TimeoutNormalMs)
-            };
             try
             {
-                string response = await client.GetStringAsync(this.Url);
+                string response = await Client.GetStringAsync(this.Url);
                 this.EndTiming();
 
                 bool success = this.HandleResponse(response, out RunnerProfile profile);
@@ -39,7 +36,7 @@ namespace AATool.Net.Requests
                     try
                     {
                         string avatarUrl = Paths.Web.GetSpeedrunDotComPictureUrl(profile.Id);
-                        using (Stream imageStream = await client.GetStreamAsync(avatarUrl))
+                        using (Stream imageStream = await Client.GetStreamAsync(avatarUrl))
                         {
                             var picture = Texture2D.FromStream(Main.GraphicsManager.GraphicsDevice, imageStream);
                             string cacheFile = Paths.System.SpeedrunDotComProfilePicture(profile.Id);

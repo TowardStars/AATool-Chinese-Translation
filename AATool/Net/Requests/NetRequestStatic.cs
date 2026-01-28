@@ -1,11 +1,18 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using AATool.Utilities;
 
 namespace AATool.Net
 {
     public abstract partial class NetRequest
     {
+        protected static readonly HttpClient Client = new HttpClient
+        {
+            Timeout = TimeSpan.FromMilliseconds(Protocol.Requests.TimeoutNormalMs)
+        };
+
         private static readonly Queue<NetRequest> Pending = new ();
         private static readonly List<NetRequest> TimedOut = new ();
         private static readonly HashSet<string> Abandoned = new ();

@@ -28,13 +28,10 @@ namespace AATool.Net.Requests
             Downloads++;
             this.BeginTiming();
 
-            using var client = new HttpClient() { 
-                Timeout = TimeSpan.FromMilliseconds(Protocol.Requests.TimeoutNormalMs) 
-            };
             try
             {
                 //get minecraft name and add to cache
-                string response = await client.GetStringAsync(this.Url);
+                string response = await Client.GetStringAsync(this.Url);
                 this.EndTiming();
                 return this.HandleResponse(response);
             }

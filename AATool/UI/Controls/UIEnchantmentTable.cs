@@ -16,6 +16,7 @@ namespace AATool.UI.Controls
         private const string TableGlow = "enchantment_table_glow";
         private const string Anchor = "respawn_anchor_top_on";
         private const string AnchorGlow = "respawn_anchor_glow";
+        private const string Lectern = "lectern_status";
 
         private readonly AnimatedSprite open;
         private readonly AnimatedSprite close;
@@ -28,7 +29,12 @@ namespace AATool.UI.Controls
         public UIEnchantmentTable()
         {
             this.SetLayer(Layer.Fore);
-            if (Tracker.IsWorking)
+            if (Config.Tracking.ManualChecklistMode)
+            {
+                this.SetTexture(Lectern);
+                this.glowWidth = 0;
+            }
+            else if (Tracker.IsWorking)
             {
                 this.SetTexture(Reading);
                 this.glowWidth = 1;
@@ -66,6 +72,16 @@ namespace AATool.UI.Controls
         
         public void UpdateState(bool isReadingSave)
         {
+            if (Config.Tracking.ManualChecklistMode)
+            {
+                this.SetTexture(Lectern);
+                this.glowWidth = 0;
+            }
+            else if (this.Texture == Lectern)
+            {
+                this.SetTexture(Closed); 
+            }
+            
             if (string.IsNullOrEmpty(this.Texture))
             {
                 this.SetTexture(Closed);

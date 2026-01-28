@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<control>
+    <grid>
+        <rows>
+            <row height="496"/>
+            <row height="456"/>
+            <row height="42"/>
+        </rows>
+        <columns>
+            <column width="160" collapsed="true"/>
+            <column width="23 * 68"/>
+            <column width="68"/>
+        </columns>
+
+        <!-- co-op lobby -->
+        <lobby row="0" col="0" rowspan="3"/>
+
+        <!-- basic advancements -->
+        <grid row="0" col="1" drawmode="all">
+            <rows>
+                <row height="248"/>
+                <row height="248"/>
+            </rows>
+            <columns>
+                <column width="3 * 68"/>
+				<column width="2 * 68"/>
+                <column width="6 * 68"/>
+				<column width="68"/>
+				<column width="68"/>
+                <column width="7 * 68"/>
+				<column width="68"/>
+                <column width="3 * 68"/>
+            </columns>
+            <advancement_group group="minecraft" row="0" col="0" colspan="2" exclude="minecraft:story/root"/>
+            <advancement_group group="nether"    row="0" col="2" colspan="3" direction="righttoleft" exclude="minecraft:nether/root"/>
+            <advancement_group group="end"       row="1" col="0"/>
+			<advancement_group group="adventure" row="0" col="5" end="minecraft:adventure/spyglass_at_dragon" exclude="minecraft:adventure/spyglass_at_parrot,minecraft:adventure/spyglass_at_ghast,minecraft:adventure/spyglass_at_dragon"/>
+			<advancement_group group="adventure" row="1" col="5" start="minecraft:adventure/heart_transplanter"/>
+
+			<advancement_group group="husbandry" row="1" col="1" colspan="2" end="minecraft:husbandry/obtain_netherite_hoe" exclude="minecraft:husbandry/root,minecraft:husbandry/breed_an_animal"/>
+            <advancement_group group="husbandry" row="1" col="3" start="minecraft:husbandry/froglights"/>
+			<advancement_group group="adventure" row="1" col="4" start="minecraft:adventure/spyglass_at_parrot" end="minecraft:adventure/spyglass_at_dragon"/>
+
+			<!-- pickup counts -->
+			<flow_panel row="0" col="6">
+				<objective_frame complex="Trident"/>
+				<objective_frame complex="NautilusShells"/>
+				<objective_frame complex="Sniffers"/>
+			</flow_panel>
+			<flow_panel row="1" col="6">
+				<objective_frame complex="WitherSkulls"/>
+				<objective_frame complex="GoldBlocks"/>
+				<objective_frame complex="HeavyCore"/>
+			</flow_panel>
+-
+            <!-- info panel -->
+            <leaderboard name="Leaderboard" category="All Advancements" version="1.21.6" row="0" col="7" rowspan="2" rows="7"/>
+            <potion_group name="Potion Recipes" row="0" col="7" rowspan="2" padding="8,0,6,0"/>
+        </grid>
+
+        <!-- advancements with subcriteria -->
+        <flow_panel row="1" col="1" colspan="2">
+            <criteria_group width="6 * 68" advancement="minecraft:adventure/adventuring_time" cell_width="130"/>
+            <criteria_group width="4.5 * 68" advancement="minecraft:adventure/kill_all_mobs" cell_width="108" spacers="3@12,3@29,"/>
+            <criteria_group width="5 * 68" advancement="minecraft:husbandry/balanced_diet" cell_width="112" spacers="4@11,4@27,"/>
+            <criteria_group width="2.5 * 68" advancement="minecraft:husbandry/bred_all_animals" cell_width="88" spacers="4@11"/>
+            <criteria_group width="1.5 * 68" advancement="minecraft:husbandry/complete_catalogue"/>
+            <criteria_group width="1.5 * 68" advancement="minecraft:husbandry/whole_pack"/>
+            <panel width="3 * 68" draw_mode="childrenonly">
+                <criteria_group height="208" cell_width="80" spacers="3" vertical_align="top" advancement="minecraft:adventure/trim_with_all_exclusive_armor_patterns"/>
+                <criteria_group height="248" cell_width="85" vertical_align="bottom" advancement="minecraft:nether/explore_nether"/>
+            </panel>
+        </flow_panel>
+
+        <!-- status strip -->
+        <status_bar row="2" col="1" colspan="3" right="476"/>
+    </grid>
+</control>

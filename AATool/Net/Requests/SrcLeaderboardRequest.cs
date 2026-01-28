@@ -23,13 +23,10 @@ namespace AATool.Net.Requests
             Debug.Log(Debug.RequestSection, $"Requested {this.category} {this.version} leaderboard from speedrun.com");
             this.BeginTiming();
 
-            using var client = new HttpClient() {
-                Timeout = TimeSpan.FromMilliseconds(Protocol.Requests.TimeoutLongerMs)
-            };
             try
             {
                 //download leaderboard from speedrun.com as json string
-                string response = await client.GetStringAsync(this.Url);
+                string response = await Client.GetStringAsync(this.Url);
                 this.EndTiming();
                 if (this.HandleResponse(response))
                 {

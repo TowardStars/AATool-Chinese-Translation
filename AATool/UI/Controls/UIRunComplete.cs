@@ -390,7 +390,8 @@ namespace AATool.UI.Controls
                     FlexWidth  = new Size(donor ? 170 : 220),
                     FlexHeight = new Size(32),
                     HorizontalTextAlign = panel.HorizontalAlign,
-                    VerticalTextAlign = VerticalAlign.Top
+                    VerticalTextAlign = VerticalAlign.Top,
+                    NoWrap = true
                 };
                 supporter.SetFont("minecraft2", 24);  // overlay结算页面赞助者字体
 

@@ -55,16 +55,18 @@ namespace AATool.Data.Objectives.Complex
             if (this.Looted)
                 return "Obtained";
 
-            return "God\0Apple";
+            return Config.Main.RenameToNotchApple ? "Notch\0Apple" : "God\0Apple";
         }
 
         protected override string GetLongStatus()
         {
+            string name = Config.Main.RenameToNotchApple ? "Notch" : "God";
+
             if (this.Eaten)
                 return "已吃\n附魔金苹果";
 
             if (this.Looted || this.ManuallyChecked)
-                return "获得\n附魔金苹果";
+                return "已获得\n附魔金苹果";
             
             return "尚未获得\n附魔金苹果";
         }

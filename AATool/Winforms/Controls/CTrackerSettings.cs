@@ -31,6 +31,7 @@ namespace AATool.Winforms.Controls
 
             this.worldRemote.Checked = Config.Tracking.UseSftp;
             this.worldLocal.Checked = !Config.Tracking.UseSftp;
+            this.manualChecklist.Checked = Config.Tracking.ManualChecklistMode;
 
             this.filterCombined.Checked = Config.Tracking.Filter == ProgressFilter.Combined;
             this.filterSolo.Checked = Config.Tracking.Filter == ProgressFilter.Solo;
@@ -99,6 +100,7 @@ namespace AATool.Winforms.Controls
                         : TrackerSource.SpecificWorld;
                 Config.Tracking.Source.Set(source);
 
+                Config.Tracking.ManualChecklistMode.Set(this.manualChecklist.Checked);
                 Config.Tracking.UseSftp.Set(this.worldRemote.Checked);
                 Config.Tracking.AutoDetectVersion.Set(this.autoVersion.Checked);
                 Config.Tracking.BroadcastProgress.Set(this.enableOpenTracker.Checked);
@@ -144,13 +146,20 @@ namespace AATool.Winforms.Controls
         {
             if (this.worldLocal.Checked)
             {
+                this.localGroup.Enabled = true;
                 this.localGroup.Visible = true;
                 this.remoteGroup.Visible = false;
             }
-            else
+            else if (this.worldRemote.Checked)
             {
+                this.remoteGroup.Enabled = true;
                 this.localGroup.Visible = false;
                 this.remoteGroup.Visible = true;
+            }
+            else if (this.manualChecklist.Checked)
+            {
+                this.localGroup.Enabled = false;
+                this.remoteGroup.Enabled = false;
             }
         }
 

@@ -15,6 +15,7 @@ namespace AATool.UI.Controls
         private const string SyncTexture = "sync";
         private const string SyncingTexture = "syncing";
         private const string LockedTexture = "locked";
+        private const string ClearTexture = "clear_manual_checklist";
 
         private UIButton button;
         private UIPicture icon;
@@ -54,7 +55,11 @@ namespace AATool.UI.Controls
         {
             if (sender == this.button)
             {
-                if (Config.Tracking.UseSftp)
+                if (Config.Tracking.ManualChecklistMode)
+                {
+                    this.PromptClearManualChecklist();
+                }
+                else if (Config.Tracking.UseSftp)
                 {
                     MinecraftServer.Sync();
                 }
@@ -67,11 +72,32 @@ namespace AATool.UI.Controls
             }
         }
 
+        private void PromptClearManualChecklist()
+        {
+            System.Windows.Forms.DialogResult result = System.Windows.Forms.MessageBox.Show(
+                "You are about to clear all manually checked Advancements and sub-criteria. Are you sure?",
+                "Clear manually checked items",
+                System.Windows.Forms.MessageBoxButtons.OKCancel,
+                System.Windows.Forms.MessageBoxIcon.Warning
+            );
+
+            if (result is System.Windows.Forms.DialogResult.OK)
+            {
+                (this.Root() as UIMainScreen).checklist.Clear();
+            }
+        }
+
         protected override void UpdateThis(Time time)
         {
             this.fade.Update(time);
 
-            if (!Config.Tracking.UseSftp || Peer.IsClient)
+            if (Config.Tracking.ManualChecklistMode)
+            {
+                this.icon.SetTexture(ClearTexture);
+                this.icon.SetTint(Color.White);
+                this.lockIcon.SetTexture(string.Empty);
+            }
+            else if (!Config.Tracking.UseSftp || Peer.IsClient)
             {
                 //update style
                 this.icon.SetTexture(((string)Config.Main.RefreshIcon).Replace(" ", "_").ToLower());

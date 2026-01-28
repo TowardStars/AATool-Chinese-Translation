@@ -191,7 +191,8 @@ namespace AATool.UI.Controls
                 if (Tracker.Invalidated || Tracker.DesignationsChanged
                     || Config.Main.Layout.Changed 
                     || Config.Main.ProgressBarStyle.Changed
-                    || Config.Tracking.FilterChanged)
+                    || Config.Tracking.FilterChanged
+                    || Tracker.ManualChecklistChanged)
                     this.UpdateProgress();
             }
         }

@@ -15,11 +15,12 @@ namespace AATool.UI.Controls
         public DynamicSpriteFont Font    { get; protected set; }
         public string WrappedText        { get; protected set; }
         public Rectangle TextBounds      { get; protected set; }
-
+        
         public Color TextColor                      { get; set; }
         public HorizontalAlign HorizontalTextAlign  { get; set; }
         public VerticalAlign   VerticalTextAlign    { get; set; }
         public bool DrawBackground                  { get; set; }
+        public bool NoWrap { get; set; }
 
         private StringBuilder builder;
 
@@ -174,6 +175,12 @@ namespace AATool.UI.Controls
         {
             if (this.IsEmpty)
                 return;
+
+            if (this.NoWrap)
+            {
+                this.WrappedText = this.ToString();
+                return;
+            }
 
             var wrappedBuilder = new StringBuilder();
             float lineWidth = 0;

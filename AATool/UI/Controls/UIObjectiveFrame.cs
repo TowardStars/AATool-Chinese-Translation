@@ -8,13 +8,14 @@ using AATool.Data.Categories;
 using AATool.Data.Objectives;
 using AATool.Graphics;
 using AATool.Net;
+using AATool.UI.Interfaces;
 using AATool.UI.Screens;
 using AATool.Utilities;
 using Microsoft.Xna.Framework;
 
 namespace AATool.UI.Controls
 {
-    public class UIObjectiveFrame : UIObjectiveControl
+    public class UIObjectiveFrame : UIObjectiveControl, ICheckableControl
     {
         private static readonly Dictionary<FrameType, string> CompleteMinecraftFrames = new () {
             { FrameType.Normal,     "frame_mc_normal_complete"},
@@ -56,6 +57,9 @@ namespace AATool.UI.Controls
         private bool onMainScreen;
         private float edgeGlow;
         public Point IconCenter => this.Icon.Center;
+        public bool IsChecked { get => this.Objective.ManuallyChecked; set => this.Objective.ManuallyChecked = value; }
+        public Rectangle ManualCheckBounds => this.Icon.Bounds;
+        public string Key => this.Objective.Id;
 
         public UIObjectiveFrame() : base()
         {
@@ -166,7 +170,7 @@ namespace AATool.UI.Controls
             }
 
             //add manual override checkbox
-            if (this.Objective is not null && this.Objective.CanBeManuallyChecked && this.onMainScreen)
+            if (this.Objective is not null &&this.onMainScreen)
             {
                 Margin margin = this.Objective is Death
                     ? new Margin(0, -2, -10, 0)
@@ -188,6 +192,7 @@ namespace AATool.UI.Controls
                 };
                 this.ManualCheck.AddControl(new UIPicture());
                 this.ManualCheck.OnClick += (this.Root() as UIMainScreen).Click;
+                this.ManualCheck.SetVisibility(this.Objective.CanBeManuallyChecked || Config.Tracking.ManualChecklistMode);
                 this.AddControl(this.ManualCheck);
             }
 

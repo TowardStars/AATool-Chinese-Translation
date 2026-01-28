@@ -155,6 +155,12 @@ namespace AATool.Utilities
                     }
                     path = args.Substring(index + NativesFlag.Length, length - NativesFlag.Length - 8) + ".minecraft\\";
                     path = path.Replace("/", "\\");
+
+                    if (!Directory.Exists(path))
+                    {
+                        path = args.Substring(index + NativesFlag.Length, length - NativesFlag.Length - 8) + "minecraft\\";
+                        path = path.Replace("/", "\\");
+                    }
                 }
                 folder = new DirectoryInfo(path);
             }

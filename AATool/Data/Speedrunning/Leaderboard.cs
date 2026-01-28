@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using AATool.Configuration;
+using AATool.Data.Categories;
 using AATool.Net;
 using AATool.Net.Requests;
 using AATool.UI.Badges;
-using Renci.SshNet;
 
 namespace AATool.Data.Speedrunning
 {
@@ -47,7 +46,10 @@ namespace AATool.Data.Speedrunning
 
         public static readonly TimeZoneInfo TimeZone = TimeZoneInfo.FindSystemTimeZoneById("Eastern Standard Time");
 
-        public static readonly string[] AAVersions = { "1.20", "1.19", "1.18", "1.17", "1.16", "1.15", "1.14", "1.13", "1.12", "1.11", "1.6" };
+        public static readonly string[] AAVersions = AllAdvancements.SupportedVersions.Union(
+            new [] { "1.11", "1.6" }
+        ).ToArray();
+        
         public static readonly string[] AnyPercentVersions = { "1.16+", "1.13-1.15", "1.9-1.12", "1.18", "pre-1.18" };
 
         static bool SecondaryCachesLoaded;
@@ -329,21 +331,19 @@ namespace AATool.Data.Speedrunning
             if (string.IsNullOrEmpty(category))
                 return false;
 
-            List<string> versions;
-            if (sheetId is Paths.Web.AASheet && pageId is Paths.Web.AAPage16)
-                versions = new() { "1.16" };
-            else if (sheetId is Paths.Web.ABSheet && pageId is Paths.Web.ABPage16)
-                versions = new() { "1.16" };
-            else if (pageId is Paths.Web.ABPage18)
-                versions = new() { "1.18" };
-            else if (pageId is Paths.Web.ABPage19)
-                versions = new() { "1.19" };
-            else if (pageId is Paths.Web.ABPage20)
-                versions = new() { "1.20" };
-            else if (pageId is Paths.Web.ABPage21)
-                versions = new() { "1.21" };
-            else
-                versions = new() { "1.21", "1.20.5", "1.20", "1.19", "1.18", "1.17", "1.15", "1.14", "1.13", "1.12", "1.11", "1.6" };
+            List<string> versions = (sheetId, pageId) switch
+            {
+                (Paths.Web.AASheet, Paths.Web.AAPage16) => new() { "1.16" },
+                (Paths.Web.ABSheet, Paths.Web.ABPage16) => new() { "1.16" },
+                (_, Paths.Web.ABPage18) => new() { "1.18" },
+                (_, Paths.Web.ABPage19) => new() { "1.19" },
+                (_, Paths.Web.ABPage20) => new() { "1.20" },
+                (_, Paths.Web.ABPage21) => new() { "1.21" },
+                _ => AllAdvancements.SupportedVersions
+                    .Union(new string[] { "1.11", "1.6" })
+                    .Where(v => v != "1.16")
+                    .ToList()
+            };
 
             //parse all the leaderboards
             foreach (string version in versions)

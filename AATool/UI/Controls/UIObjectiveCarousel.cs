@@ -36,7 +36,7 @@ namespace AATool.UI.Controls
             this.Fill();
 
             //remove existing overlay advancements that have since been completed
-            if (Tracker.ProgressChanged || Peer.StateChanged || Tracker.MainPlayerChanged || Config.Tracking.FilterChanged)
+            if (Tracker.ProgressChanged || Peer.StateChanged || Tracker.MainPlayerChanged || Tracker.ManualChecklistChanged || Config.Tracking.FilterChanged)
             {
                 for (int i = this.Children.Count - 1; i >= 0; i--)
                 {
@@ -45,6 +45,10 @@ namespace AATool.UI.Controls
                         var cover = new UICarouselCover();
                         this.Children[i].AddControl(cover);
                         cover.InitializeThis(this.Root());
+                    }
+                    else if (this.Children[i].TryGetFirst(out UICarouselCover cover))
+                    {
+                        this.Children[i].RemoveControl(cover);
                     }
                     //this.Children.RemoveAt(i);
                 }

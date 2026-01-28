@@ -46,6 +46,8 @@ namespace AATool
             public const string ProfileDetailsCacheFolder = CacheFolder + "runner_profiles/details/";
             //remote world temp folder
             public const string SftpWorldsFolder = CacheFolder + "sftp_worlds/";
+            
+            public const string ManualChecklistFolder = "checklists/";
 
             //constant asset paths
             public const string DataFolder        = "data/";
