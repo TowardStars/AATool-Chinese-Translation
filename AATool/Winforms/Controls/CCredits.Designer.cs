@@ -50,7 +50,7 @@ namespace AATool.Winforms.Controls
             this.mainGroup.Size = new System.Drawing.Size(226, 401);
             this.mainGroup.TabIndex = 25;
             this.mainGroup.TabStop = false;
-            this.mainGroup.Text = "Credits";
+            this.mainGroup.Text = "鸣谢";
             // 
             // flow
             // 
@@ -80,7 +80,7 @@ namespace AATool.Winforms.Controls
             this.patreon.TabIndex = 27;
             this.patreon.TabStop = true;
             this.patreon.Tag = "https://www.patreon.com/_ctm";
-            this.patreon.Text = "If you\'d like to see your name featured here, \r\nvisit the AATool Patreon!";
+            this.patreon.Text = "如果你希望你的名字出现在这里,\r\n请访问 AATool Patreon！";
             this.patreon.Click += new System.EventHandler(this.OnClick);
             // 
             // developer

@@ -144,7 +144,7 @@ namespace AATool
             Player.SetFlags();
 
             //update visibilty of update popup
-            if (UpdateRequest.IsDone && !UpdateRequest.Suppress)
+            if (false) //不显示更新窗口，原代码是if (UpdateRequest.IsDone && !UpdateRequest.Suppress)
             {
                 if (this.announceUpdate || UpdateRequest.UserInitiated || UpdateRequest.UpdatesAreAvailable())
                     this.ShowUpdateScreen();

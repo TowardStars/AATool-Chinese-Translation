@@ -116,7 +116,7 @@ namespace AATool.Data.Objectives.Complex
             if (this.EstimatedDebris >= Required || this.ManuallyChecked)
                 return "残骸收集完毕";
             
-            return $"远古残骸:\0{this.EstimatedDebris}\nTNT:\0{Math.Max(this.EstimatedTnt, 0)}";
+            return $"残骸:\0{this.EstimatedDebris}\nTNT:\0{Math.Max(this.EstimatedTnt, 0)}";
         }
 
         protected override string GetCurrentIcon()

@@ -2,12 +2,10 @@
 <group name="Husbandry">
     <advancement id="minecraft:husbandry/root"                    name="农牧业"                        icon="husbandry"/>
     <advancement id="minecraft:husbandry/plant_seed"              name="开荒垦地"                    short_name="开荒垦地"/>
-    <advancement id="minecraft:husbandry/breed_an_animal"         name="我从哪
-儿来？"         short_name="我从哪来"/>
-    <advancement id="minecraft:husbandry/tame_an_animal"          name="永恒的伙伴"             short_name="永恒伙伴"/>
-    <advancement id="minecraft:husbandry/fishy_business"          name="腥味十足
-的生意"                   short_name="腥味十足"/>
-    <advancement id="minecraft:husbandry/tactical_fishing"        name="战术性钓鱼"                 short_name="战术钓鱼"/>
+    <advancement id="minecraft:husbandry/breed_an_animal"         name="我从哪&#10;儿来？"         short_name="我从哪来"/>
+    <advancement id="minecraft:husbandry/tame_an_animal"          name="永恒&#10;的伙伴"             short_name="永恒伙伴"/>
+    <advancement id="minecraft:husbandry/fishy_business"          name="腥味十足&#10;的生意"                   short_name="腥味十足"/>
+    <advancement id="minecraft:husbandry/tactical_fishing"        name="战术&#10;性钓鱼"                 short_name="战术钓鱼"/>
     <advancement id="minecraft:husbandry/silk_touch_nest"         name="举巢搬迁" short_name="举巢搬迁" half="false"/>
     <advancement id="minecraft:husbandry/safely_harvest_honey"    name="与蜂共舞" short_name="与蜂共舞" half="false"/>
     <advancement id="minecraft:husbandry/obtain_netherite_hoe" name="终极奉献" short_name="终极奉献" type="challenge" half="false"/>

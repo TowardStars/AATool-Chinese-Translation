@@ -482,6 +482,9 @@
     <None Include="assets\fonts\minecraft.otf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+	<None Include="assets\fonts\minecraft2.otf">
+		<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	</None>
     <None Include="assets\translations\1.18\english.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

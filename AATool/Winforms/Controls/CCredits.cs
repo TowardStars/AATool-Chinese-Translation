@@ -11,10 +11,10 @@ namespace AATool.Winforms.Controls
         {
             this.InitializeComponent();
             this.Populate();
-            this.developer.SetTitle("Developer");
-            this.testers.SetTitle("Beta Testers");
-            this.dedication.SetTitle("Special Dedication");
-            this.supporters.SetTitle("Supporters");
+            this.developer.SetTitle("开发者");
+            this.testers.SetTitle("内测人员");
+            this.dedication.SetTitle("特别致谢");
+            this.supporters.SetTitle("赞助者");
         }
 
         private void Populate()

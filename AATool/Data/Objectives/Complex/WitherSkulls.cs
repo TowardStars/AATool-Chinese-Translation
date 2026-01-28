@@ -108,15 +108,15 @@ namespace AATool.Data.Objectives.Complex
             }
 
             if (this.witherKilled)
-                return "杀死凋零";
+                return "杀死凋灵";
 
             if (this.witherSummoned)
-                return "生成凋零";
+                return "生成凋灵";
 
             if (this.EstimatedObtained >= this.Required)
                 return $"{this.EstimatedObtained}\0/\0{this.Required}\n击杀:\0{this.witherSkeletonsKilled}";
 
-            return $"凋零骷髅头\n{this.EstimatedObtained}\0/\0{this.Required}";
+            return $"凋灵骷髅头\n{this.EstimatedObtained}\0/\0{this.Required}";
         }
 
         protected override string GetCurrentIcon()

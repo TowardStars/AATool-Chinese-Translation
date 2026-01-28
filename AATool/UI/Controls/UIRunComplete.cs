@@ -65,12 +65,17 @@ namespace AATool.UI.Controls
         {
             //aatool version
             this.version = this.First<UITextBlock>("version");
+            this.version.SetFont("minecraft2", 20);  // 为版本设置字体
+            this.version.HorizontalTextAlign = HorizontalAlign.Left;     // 文本左对齐
+            this.version.HorizontalAlign = HorizontalAlign.Left;         // 控件本身左对齐
 
             //developer
             this.creator = this.First<UITextBlock>("creator");
             this.creator.SetText("Developed by Darwin Baker");
+            this.creator.SetFont("minecraft2", 24);
             this.url = this.First<UITextBlock>("patreon");
             this.url.SetText(Paths.Web.PatreonShort);
+            this.url.SetFont("minecraft2", 24);
             this.ctm = this.First<UIPicture>("ctm");
             this.ctm.SetTexture("ctm");
 
@@ -280,6 +285,7 @@ namespace AATool.UI.Controls
             this.First<UITextBlock>("head").SetText(title);
             this.First<UITextBlock>("head_shadow").SetText(title);
             this.body.SetText(body);
+            this.body.SetFont("minecraft2", 50);  // 为结算页面body设置minecraft字体及其大小
 
             WorldState state = Tracker.State;
             string space = new (' ', 6);
@@ -332,7 +338,7 @@ namespace AATool.UI.Controls
                         HorizontalTextAlign = panel.Value.HorizontalAlign,
                         VerticalTextAlign = VerticalAlign.Top
                     };
-                    header.SetFont("minecraft", 24);
+                    header.SetFont("minecraft2", 24);  // 结算页面第二页某两部分字体
                     panel.Value.AddControl(header);
 
                     if (panel.Key is "beta testers")
@@ -386,7 +392,7 @@ namespace AATool.UI.Controls
                     HorizontalTextAlign = panel.HorizontalAlign,
                     VerticalTextAlign = VerticalAlign.Top
                 };
-                supporter.SetFont("minecraft", 24);
+                supporter.SetFont("minecraft2", 24);  // overlay结算页面赞助者字体
 
                 var tier = new UIPicture() {
                     FlexWidth       = new Size(32),

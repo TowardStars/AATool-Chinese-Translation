@@ -2,8 +2,7 @@
 <group name="Minecraft">
     <advancement id="minecraft:story/mine_stone"            name="石器时代"/>
     <advancement id="minecraft:story/upgrade_tools"         name="获得升级"       short_name="获得升级"/>
-    <advancement id="minecraft:story/iron_tools"            name="这不是
-铁镐么"       short_name="这不是铁镐么"/>
+    <advancement id="minecraft:story/iron_tools"            name="这不是&#10;铁镐么"       short_name="这不是铁镐么"/>
     <advancement id="minecraft:story/smelt_iron"            name="来硬的"         short_name="来硬的"/>
     <advancement id="minecraft:story/mine_diamond"          name="钻石！"/>
     <advancement id="minecraft:story/lava_bucket"           name="热腾腾的"/>
@@ -13,8 +12,7 @@
     <advancement id="minecraft:story/shiny_gear"            name="钻石护体"   short_name="钻石护体"/>
     <advancement id="minecraft:story/cure_zombie_villager"  name="僵尸科医生" short_name="僵尸科医生" type="goal" hidden="compact" half="false"/>
     <advancement id="minecraft:story/root"                  name="Minecraft"                icon="grass" hidden="relaxed"/>
-    <advancement id="minecraft:story/deflect_arrow"         name="不吃这套，
-谢谢"     short_name="不吃这套"/>
+    <advancement id="minecraft:story/deflect_arrow"         name="不吃这套&#10;，谢谢"     short_name="不吃这套"/>
     <advancement id="minecraft:story/follow_ender_eye"      name="隔墙有眼"/>
     <advancement id="minecraft:story/enter_the_end"         name="结束了？"                 icon="end"/>
     <advancement id="minecraft:story/enchant_item"          name="附魔师" half="false"/>

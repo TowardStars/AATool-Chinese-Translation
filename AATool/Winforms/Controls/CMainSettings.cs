@@ -133,7 +133,7 @@ namespace AATool.Winforms.Controls
             {
                 if (supporter.HighestRole is Credits.Developer)
                 {
-                    this.playerBadge.Items.Add("Developer");
+                    this.playerBadge.Items.Add("开发者");
                 }
 
                 if (supporter.HighestRole is Credits.Developer || supporter.Uuids.Contains(Credits.Deadpool))
@@ -197,20 +197,20 @@ namespace AATool.Winforms.Controls
                 this.labelBadgeAvailability.Text = $"🛈 这些是可以用于{name}的徽章和框架。";
                 if (supporter.HighestRole is Credits.NetheriteTier)
                 {
-                    this.labelBadgeAvailability.Text += " Thanks for your incredible support!";
+                    this.labelBadgeAvailability.Text += " 感谢您难以置信的支持！";
                 }
                 else if (supporter.HighestRole is Credits.DiamondTier)
                 {
-                    this.labelBadgeAvailability.Text += " Upgrade to netherite tier for more!";
+                    this.labelBadgeAvailability.Text += " 升级到下界合金等级以获得更多！";
                 }
                 else if (supporter.HighestRole is Credits.DiamondTier)
                 {
-                    this.labelBadgeAvailability.Text += " Upgrade to diamond or netherite tier for more!";
+                    this.labelBadgeAvailability.Text += " 升级到钻石或下界合金等级可获得更多！";
                 }
             }
             else
             {
-                this.labelBadgeAvailability.Text = $"🛈 More badges and frames are available to supporters of the AATool Patreon!";
+                this.labelBadgeAvailability.Text = $"🛈 AATool 的 Patreon 支持者可以获得更多徽章和边框！";
             }
             
 

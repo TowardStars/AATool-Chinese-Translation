@@ -108,7 +108,7 @@ namespace AATool.Winforms.Controls
             this.mainGroupMain.Size = new System.Drawing.Size(263, 228);
             this.mainGroupMain.TabIndex = 25;
             this.mainGroupMain.TabStop = false;
-            this.mainGroupMain.Text = "Layout";
+            this.mainGroupMain.Text = "布局";
             // 
             // alwaysOnTop
             // 

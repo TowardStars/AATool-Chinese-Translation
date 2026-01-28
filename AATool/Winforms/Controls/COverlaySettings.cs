@@ -58,7 +58,7 @@ namespace AATool.Winforms.Controls
             this.textColor.BackColor = ColorHelper.ToDrawing(Config.Overlay.CustomTextColor);
             this.backColor.BackColor = ColorHelper.ToDrawing(Config.Overlay.CustomBackColor);
             this.borderColor.BackColor = ColorHelper.ToDrawing(Config.Overlay.CustomBorderColor);
-            this.copyColorKey.Text   = $"Copy {ColorHelper.ToHexString(this.greenscreenColor.BackColor)}";
+            this.copyColorKey.Text   = $"复制 {ColorHelper.ToHexString(this.greenscreenColor.BackColor)}";
             this.copyColorKey.LinkColor = this.greenscreenColor.BackColor;
             this.restoreDefaultGreen.LinkColor = ColorHelper.ToDrawing(Config.Overlay.GreenScreen.Default);
 

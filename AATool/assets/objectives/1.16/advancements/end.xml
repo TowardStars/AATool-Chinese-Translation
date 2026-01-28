@@ -5,14 +5,9 @@
     <advancement id="minecraft:end/kill_dragon"         name="解放末地" short_name="解放末地"/>
     <advancement id="minecraft:end/dragon_egg"          name="下一世代"           short_name="下一世代" type="goal"/>
     <advancement id="minecraft:end/enter_end_gateway"   name="远程折跃"                short_name="远程折跃"/>
-    <advancement id="minecraft:end/find_end_city"       name="在游戏尽
-头的城市"   short_name="末地城" half="false"/>
-    <advancement id="minecraft:end/dragon_breath"       name="你需要来
-点薄荷糖"          short_name="来点薄荷" type="goal"/>
-    <advancement id="minecraft:end/respawn_dragon"      name="结束了…
-再一次…"           short_name="再一次" type="goal" half="false"/>
-    <advancement id="minecraft:end/elytra"              name="天空即
-为极限"               short_name="天空极限" type="goal" half="false"/>
-    <advancement id="minecraft:end/levitate"            name="这上面的
-风景不错"          short_name="风景不错" type="challenge" half="false"/>
+    <advancement id="minecraft:end/find_end_city"       name="在游戏尽&#10;头的城市"   short_name="末地城" half="false"/>
+    <advancement id="minecraft:end/dragon_breath"       name="你需要来&#10;点薄荷糖"          short_name="来点薄荷" type="goal"/>
+    <advancement id="minecraft:end/respawn_dragon"      name="结束了…&#10;再一次…"           short_name="再一次" type="goal" half="false"/>
+    <advancement id="minecraft:end/elytra"              name="天空即&#10;为极限"               short_name="天空极限" type="goal" half="false"/>
+    <advancement id="minecraft:end/levitate"            name="这上面的&#10;风景不错"          short_name="风景不错" type="challenge" half="false"/>
 </group>

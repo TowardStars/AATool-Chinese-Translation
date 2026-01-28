@@ -101,7 +101,7 @@ namespace AATool.Data.Objectives.Complex
                 return $"金块收集完毕";
 
             if (this.estimatedBlocks > 0)
-                return $"Gold\0Estimate\n{this.estimatedBlocks}\0/\0{Required}";
+                return $"金块\n{this.estimatedBlocks}\0/\0{Required}";
 
             return $"金块\n0\0/\0{Required}";  
         }

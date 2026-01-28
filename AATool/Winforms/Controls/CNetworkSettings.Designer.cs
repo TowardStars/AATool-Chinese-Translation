@@ -83,7 +83,7 @@ namespace AATool.Winforms.Controls
             this.kick.Name = "kick";
             this.kick.Size = new System.Drawing.Size(47, 23);
             this.kick.TabIndex = 46;
-            this.kick.Text = "Kick";
+            this.kick.Text = "踢出";
             this.kick.UseVisualStyleBackColor = true;
             this.kick.Click += new System.EventHandler(this.OnClick);
             // 
@@ -371,7 +371,7 @@ namespace AATool.Winforms.Controls
             this.help.Size = new System.Drawing.Size(130, 13);
             this.help.TabIndex = 33;
             this.help.TabStop = true;
-            this.help.Text = "Setup guide coming soon!";
+            this.help.Text = "配置指导正在路上！";
             // 
             // CNetworkSettings
             // 

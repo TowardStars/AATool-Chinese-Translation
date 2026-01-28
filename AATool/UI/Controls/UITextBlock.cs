@@ -239,7 +239,7 @@ namespace AATool.UI.Controls
         {
             base.ReadNode(node);
             this.SetText(Attribute(node, "text", string.Empty));
-            this.SetFont("minecraft", Attribute(node, "font_size", 12));
+            this.SetFont("minecraft", Attribute(node, "font_size", 14)); // 这是主页面下方字体大小
             this.SetTextColor(Attribute(node, "color", Color.Transparent));
             this.HorizontalTextAlign = Attribute(node, "text_align", this.HorizontalTextAlign);
             this.VerticalTextAlign   = Attribute(node, "text_align", VerticalAlign.Top);

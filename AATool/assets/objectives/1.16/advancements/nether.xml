@@ -1,18 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <group name="Nether">
     <advancement id="minecraft:nether/return_to_sender" name="见鬼去吧" short_name="见鬼去吧" type="challenge"/>
-    <advancement id="minecraft:nether/use_lodestone" name="天涯共此石" short_name="天涯石" half="false"/>
-    <advancement id="minecraft:nether/charge_respawn_anchor" name="锚没有
-九条命" short_name="锚九条命"/>
-    <advancement id="minecraft:nether/obtain_crying_obsidian" name="谁在切洋葱？" short_name="谁切洋葱？"/>
+    <advancement id="minecraft:nether/use_lodestone" name="天涯&#10;共此石" short_name="天涯石" half="false"/>
+    <advancement id="minecraft:nether/charge_respawn_anchor" name="锚没有&#10;九条命" short_name="锚九条命"/>
+    <advancement id="minecraft:nether/obtain_crying_obsidian" name="谁在&#10;切洋葱？" short_name="谁切洋葱？"/>
     <advancement id="minecraft:nether/loot_bastion" name="战猪"/>
     <advancement id="minecraft:nether/find_bastion" name="光辉岁月" short_name="光辉岁月"/>
-    <advancement id="minecraft:nether/find_fortress" name="阴森的要塞" short_name="阴森要塞"/>
+    <advancement id="minecraft:nether/find_fortress" name="阴森&#10;的要塞" short_name="阴森要塞"/>
     <advancement id="minecraft:nether/root" name="勇往直下" icon="nether"/>
 
-    <advancement id="minecraft:nether/uneasy_alliance" name="脆弱的同盟" short_name="脆弱同盟" type="challenge" half="false"/>
+    <advancement id="minecraft:nether/uneasy_alliance" name="脆弱&#10;的同盟" short_name="脆弱同盟" type="challenge" half="false"/>
     <advancement id="minecraft:nether/fast_travel" name="曲速泡" short_name="曲速泡" type="challenge" half="false"/>
-    <advancement id="minecraft:nether/brew_potion" name="本地酿造厂" short_name="本地酿造"/>
+    <advancement id="minecraft:nether/brew_potion" name="本地&#10;酿造厂" short_name="本地酿造"/>
     <advancement id="minecraft:nether/obtain_blaze_rod" name="与火共舞"/>
     <advancement id="minecraft:nether/distract_piglin" name="金光闪闪"/>
     <advancement id="minecraft:nether/obtain_ancient_debris" name="深藏不露" short_name="深藏不露"/>
@@ -27,14 +26,11 @@
     </advancement>
     <advancement id="minecraft:nether/netherite_armor" name="残骸裹身" short_name="残骸裹身" type="challenge" half="false"/>
     
-    <advancement id="minecraft:nether/all_effects" name="为什么会变
-成这样呢？" short_name="全状态" type="challenge" half="false"/>
-    <advancement id="minecraft:nether/all_potions" name="狂乱的
-鸡尾酒" short_name="全药水" type="challenge" half="false"/>
-    <advancement id="minecraft:nether/create_full_beacon" name="信标工程师" short_name="信标工程师" icon="beacon" type="goal" half="false"/>
-    <advancement id="minecraft:nether/create_beacon" name="带信标回家" short_name="信标回家" icon="beacon" half="false"/>
-    <advancement id="minecraft:nether/summon_wither" name="凋零山庄" short_name="凋零山庄" half="false"/>
-    <advancement id="minecraft:nether/get_wither_skull" name="惊悚恐怖
-骷髅头" short_name="惊悚骷髅" half="false"/>
+    <advancement id="minecraft:nether/all_effects" name="为什么会变&#10;成这样呢？" short_name="全状态" type="challenge" half="false"/>
+    <advancement id="minecraft:nether/all_potions" name="狂乱的&#10;鸡尾酒" short_name="全药水" type="challenge" half="false"/>
+    <advancement id="minecraft:nether/create_full_beacon" name="信标&#10;工程师" short_name="信标工程师" icon="beacon" type="goal" half="false"/>
+    <advancement id="minecraft:nether/create_beacon" name="带信标&#10;回家" short_name="信标回家" icon="beacon" half="false"/>
+    <advancement id="minecraft:nether/summon_wither" name="凋灵山庄" short_name="凋灵山庄" half="false"/>
+    <advancement id="minecraft:nether/get_wither_skull" name="惊悚恐怖&#10;骷髅头" short_name="惊悚骷髅" half="false"/>
     <advancement id="minecraft:nether/ride_strider" name="画船添足" short_name="画船添足" half="false"/>
 </group>

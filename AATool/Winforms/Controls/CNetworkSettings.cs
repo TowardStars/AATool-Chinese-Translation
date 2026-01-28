@@ -45,7 +45,7 @@ namespace AATool.Winforms.Controls
                 this.ip.Text            = Config.Net.IP;
                 this.port.Text          = ((int)Config.Net.Port).ToString();
                 this.networkType.Text   = Config.Net.IsServer ? "Server" : "Client";
-                this.networkSwitch.Text = this.networkType.Text is "Server" ? "Start" : "Connect";
+                this.networkSwitch.Text = this.networkType.Text is "Server" ? "开启" : "连接";
             }
             this.password.Text          = Config.Net.Password;
             this.autoServerIP.Checked   = Config.Net.AutoServerIP;
@@ -166,7 +166,7 @@ namespace AATool.Winforms.Controls
             if (sender == this.networkType)
             {
                 bool isClient = sender is Control control && control.Text.ToLower() is "client";
-                this.networkSwitch.Text = isClient ? "连接" : "主机";
+                this.networkSwitch.Text = isClient ? "连接" : "开始";
                 this.autoServerIP.Visible = !isClient;
 
                 if (!isClient && this.autoServerIP.Checked && NetworkHelper.TryGetLocalIPAddress(out IPAddress address))

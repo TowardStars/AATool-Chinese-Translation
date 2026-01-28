@@ -100,7 +100,7 @@ namespace AATool.Winforms.Controls
             this.restoreDefaultGreen.Size = new System.Drawing.Size(79, 13);
             this.restoreDefaultGreen.TabIndex = 41;
             this.restoreDefaultGreen.TabStop = true;
-            this.restoreDefaultGreen.Text = "Restore default";
+            this.restoreDefaultGreen.Text = "恢复为默认值";
             this.restoreDefaultGreen.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OnClicked);
             this.restoreDefaultGreen.Click += new System.EventHandler(this.OnClicked);
             // 
@@ -113,7 +113,7 @@ namespace AATool.Winforms.Controls
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(192, 37);
             this.label11.TabIndex = 40;
-            this.label11.Text = "🛈 Make sure to use \"Color Key\" NOT \"Chroma Key\" for best results!";
+            this.label11.Text = "🛈 请确保用“色值”而不是“色度键”以获得最佳输出！";
             // 
             // copyColorKey
             // 
@@ -123,7 +123,7 @@ namespace AATool.Winforms.Controls
             this.copyColorKey.Size = new System.Drawing.Size(77, 13);
             this.copyColorKey.TabIndex = 29;
             this.copyColorKey.TabStop = true;
-            this.copyColorKey.Text = "Copy #00aa00";
+            this.copyColorKey.Text = "复制 #00aa00";
             this.copyColorKey.Click += new System.EventHandler(this.OnClicked);
             // 
             // greenscreenColor
@@ -174,7 +174,7 @@ namespace AATool.Winforms.Controls
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(95, 40);
             this.label14.TabIndex = 54;
-            this.label14.Text = "🛈 鹦鹉螺壳、凋零骷髅头、三叉戟等";
+            this.label14.Text = "🛈 鹦鹉螺壳、凋灵骷髅头、三叉戟等";
             // 
             // label13
             // 
@@ -288,7 +288,7 @@ namespace AATool.Winforms.Controls
             this.obsHelpLink.Size = new System.Drawing.Size(124, 44);
             this.obsHelpLink.TabIndex = 48;
             this.obsHelpLink.TabStop = true;
-            this.obsHelpLink.Text = "Click here for a guide if you need help setting up your overlay!";
+            this.obsHelpLink.Text = "如果你需要设置OBS覆盖的帮助，单击此处获取指导！(没反应）";
             this.obsHelpLink.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label4

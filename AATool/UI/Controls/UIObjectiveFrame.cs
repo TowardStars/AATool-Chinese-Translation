@@ -143,7 +143,7 @@ namespace AATool.UI.Controls
                     this.Label.FlexHeight = new Size(textSize * 2);
                 }
                 if (this.onMainScreen)
-                    this.Label.SetFont("minecraft", 12);
+                    this.Label.SetFont("minecraft", 15);  //这是主页面进度图下方名称大小
                 else
                     this.Label.SetFont("minecraft", textSize);
 

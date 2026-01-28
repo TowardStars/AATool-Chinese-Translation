@@ -227,8 +227,8 @@ namespace AATool
             else if (IsWorking)
             {
                 return Source is TrackerSource.ActiveInstance && ActiveInstance.HasNumber
-                    ? $"Instance {ActiveInstance.Number}: \"{WorldName}\""
-                    : $"Tracking: \"{WorldName}\"";
+                    ? $"实例 {ActiveInstance.Number}: \"{WorldName}\""
+                    : $"追踪: \"{WorldName}\"";
             }
             return LastError.Message;
         }
@@ -412,7 +412,7 @@ namespace AATool
                         if (LastError is not ArgumentException || Config.Tracking.SourceChanged)
                         {
                             throw Source is TrackerSource.ActiveInstance
-                                ? new ArgumentException("进入 Minecraft 开始跟踪")
+                                ? new ArgumentException("进入 Minecraft 开始追踪")
                                 : new ArgumentException("自定义存档文件夹是空的");
                         }
                         return;
