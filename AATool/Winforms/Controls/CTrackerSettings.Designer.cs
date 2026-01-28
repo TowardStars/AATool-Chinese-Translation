@@ -268,7 +268,7 @@ namespace AATool.Winforms.Controls
             this.groupBox3.Size = new System.Drawing.Size(113, 96);
             this.groupBox3.TabIndex = 29;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Tracking Mode";
+            this.groupBox3.Text = "追踪模式";
             // 
             // manualChecklist
             // 
@@ -279,7 +279,7 @@ namespace AATool.Winforms.Controls
             this.manualChecklist.Size = new System.Drawing.Size(106, 17);
             this.manualChecklist.TabIndex = 37;
             this.manualChecklist.TabStop = true;
-            this.manualChecklist.Text = "Manual Checklist";
+            this.manualChecklist.Text = "手动勾选";
             this.manualChecklist.UseVisualStyleBackColor = true;
             this.manualChecklist.CheckedChanged += new System.EventHandler(this.OnCheckChanged);
             // 

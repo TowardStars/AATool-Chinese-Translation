@@ -96,7 +96,7 @@ namespace AATool
         {
             int seconds = (int)Math.Max(time.TotalSeconds - LastRefresh, 0);
             if (seconds < 1)
-                return "Refreshing Now";
+                return "正在更新";
             else if (seconds == 1)
                 return $"1 秒 前更新";
             else
@@ -235,7 +235,7 @@ namespace AATool
 
             if (Config.Tracking.ManualChecklistMode)
             {
-                return "Manual Mode: Click items to mark as complete";
+                return "手动模式：点击项目图标将其标记\n为已完成";
             }
 
             if (IsWorking)

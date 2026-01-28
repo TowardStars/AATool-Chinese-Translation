@@ -75,8 +75,8 @@ namespace AATool.UI.Controls
         private void PromptClearManualChecklist()
         {
             System.Windows.Forms.DialogResult result = System.Windows.Forms.MessageBox.Show(
-                "You are about to clear all manually checked Advancements and sub-criteria. Are you sure?",
-                "Clear manually checked items",
+                "你即将清除所有手动标记的进度和子项目。你确定吗？",
+                "清除手动标记的项目",
                 System.Windows.Forms.MessageBoxButtons.OKCancel,
                 System.Windows.Forms.MessageBoxIcon.Warning
             );
