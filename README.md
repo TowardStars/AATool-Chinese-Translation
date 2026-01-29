@@ -1,8 +1,9 @@
 ## AATool 非官方汉化版
 
 **作者：** TowardStars  
-**原项目地址：** [DarwinBaker/AATool](https://github.com/DarwinBaker/AATool)
-
+**原项目地址：** [DarwinBaker/AATool](https://github.com/DarwinBaker/AATool)   
+**本项目地址：**[Github](https://github.com/TowardStars/AATool-Chinese-Translation)、[Gitee](https://gitee.com/towardstars/aatool-chinese-translation)   
+**下载地址：**[通过Github下载](https://github.com/TowardStars/AATool-Chinese-Translation/releases/latest)、[国内推荐通过Gitee下载](https://gitee.com/towardstars/aatool-chinese-translation)   
 本项目为 AATool 的非官方简体中文汉化版本，适用于 Minecraft 1.16.1 的全进度使用场景。未来会随着原作者版本的更新而更新。
 
 ---
